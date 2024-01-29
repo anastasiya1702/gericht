@@ -1,0 +1,211 @@
+/**********
+*** FONT START ***
+**********/
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Inter-Regular"),
+    url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Inter-Medium"),
+    url("../fonts/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Inter-SemiBold"),
+    url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter-SemiBold.woff") format("woff");
+}
+
+/**********
+*** FONT END ***
+**********/
+
+/**********
+*** COLOR START ***
+**********/
+:root {
+  --black: #1C1C1C;
+
+  --white: #FFFFFF;
+
+  --grey: #8B96A5;
+  --grey-100: #505050;
+  --grey-200: #606060;
+  --grey-300: #DEE2E7;
+  --grey-400: #E0E0E0;
+  --grey-500: #D9D9D9;
+  --grey-600: #EFF2F4;
+
+  --blue: #0D6EFD;
+
+  --blue-light: #E3F0FF;
+  --blue-light-100: #55BDC3;
+  --blue-light-200: #D1E7FF;
+  --blue-light-300: #E5F1FF;
+
+  --red: #EB001B;
+  --red-100: #FFE3E3;
+
+  --orange: #F38332;
+}
+
+/**********
+*** COLOR END ***
+**********/
+
+/**********
+*** COMMON START ***
+**********/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dt {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+input,
+textarea {
+  outline: transparent;
+  border: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+/* .button {
+  border-radius: 6px;
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  box-shadow: 0 1px 2px 0 rgba(56, 56, 56, 0.08);
+  font-weight: 500;
+  line-height: normal;
+  height: 40px;
+  padding: 0px 17px;
+  align-items: center;
+  transition: box-shadow .3s;
+}
+
+.button:hover {
+  box-shadow: 2px 3px 2px 3px rgba(56, 56, 56, 0.08);
+}
+
+.btn-blue {
+  background-color: var(--blue);
+  border-radius: 6px;
+  padding: 0 16px;
+  align-items: center;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--white);
+  height: 40px;
+  transition: box-shadow .3s;
+}
+
+.btn-blue:hover {
+  box-shadow: 2px 5px 8px 1px rgba(62, 27, 27, 0.218);
+} */
+
+.main {
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+/**********
+*** COMMON END ***
+**********/
