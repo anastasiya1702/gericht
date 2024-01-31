@@ -27,11 +27,11 @@
         </h3>
         <label class="window-form__label" for="#">
           Username
-          <input class="window-form__input" type="text" required placeholder="name@125.com">
+          <input class="window-form__input form-input" type="text" required placeholder="name@125.com">
         </label>
         <label class="window-form__label" for="#">
           Password
-          <input class="window-form__input" type="password" required>
+          <input class="window-form__input form-input" type="password" required>
         </label>
         <button class="window-form__btn button" type="submit">
           Log in
@@ -50,19 +50,19 @@
         </h3>
         <label class="window-form__label" for="#">
           Username
-          <input class="window-form__input" type="text" required placeholder="Anna">
+          <input class="window-form__input form-input" type="text" required placeholder="Anna">
         </label>
         <label class="window-form__label" for="#">
           Email address
-          <input class="window-form__input" type="email" required placeholder="anna@452.com">
+          <input class="window-form__input form-input" type="email" required placeholder="anna@452.com">
         </label>
         <label class="window-form__label" for="#">
           Phone
-          <input class="window-form__input" type="tel" required placeholder="+380555212514">
+          <input class="window-form__input form-input" type="tel" required placeholder="+380555212514">
         </label>
         <label class="window-form__label" for="#">
           Password
-          <input class="window-form__input" type="password" required>
+          <input class="window-form__input form-input" type="password" required>
         </label>
         <label class="window-form__conf">
           <input class="window-form__checkbox" type="checkbox" checked="checked" name="confidentiality policy">
@@ -302,6 +302,60 @@
     </section>
     <!-- ABOUT END -->
 
+    <!-- RESERV START -->
+    <section class="reserv">
+      <div class="container">
+        <div class="reserv__wrap">
+          <form class="reserv-form flex" action="#">
+            <div class="reserv-form__block">
+              <p class="subtitle-center">
+                Reservations
+              </p>
+              <h2 class="title">
+                Book A Table
+              </h2>
+            </div>
+            <div class="label-box flex">
+              <label class="reserv-form__label" for="#">
+                <input class="reserv-form__input form-input" name="number" list="numbers" placeholder="1 Persone">
+                <datalist id="numbers">
+                  <option value="1 Persone"/>
+                  <option value="2 Persons"/>
+                  <option value="3 Persons"/>
+                  <option value="4 Persons"/>
+                  <option value="5 Persons"/>
+                </datalist>
+              </label>
+              <label class="reserv-form__label" for="#">
+                <input class="reserv-form__input form-input" name="date" list="dates"  placeholder="12/05/2021">
+                <datalist id="dates">
+                  <option value="12/05/2024"/>
+                  <option value="13/05/2024"/>
+                  <option value="14/05/2024"/>
+                  <option value="15/05/2024"/>
+                  <option value="16/05/2024"/>
+                </datalist>
+              </label>
+              <label class="reserv-form__label" for="#">
+                <input class="reserv-form__input form-input" name="datetime" list="datetimes" placeholder="11:00 AM">
+                <datalist id="datetimes">
+                  <option value="11:00 AM"/>
+                  <option value="12:00 AM"/>
+                  <option value="13:00 AM"/>
+                  <option value="14:00 AM"/>
+                  <option value="15:00 AM"/>
+                </datalist>
+              </label>
+            </div>
+            <button class="button btn" type="submit">
+              Book Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- RESERV END -->
+
   </main>
   <!-- MAIN END -->
 
@@ -311,7 +365,7 @@
   </footer>
   <!-- FOOTER END -->
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.js"></script>

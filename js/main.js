@@ -12,6 +12,19 @@ $(function () {
     verticalSwiping: true,
     centerMode: true,
   });
+  
+
+  $('datalist#numbers').on('change', function () {
+    $('input[name="number"]').val(this.value);
+  });
+
+  $('datalist#dates').on('change', function () {
+    $('input[name="date"]').val(this.value);
+  });
+
+  $('datalist#datetimes').on('change', function () {
+    $('input[name="datetime"]').val(this.value);
+  });
 
 
 
