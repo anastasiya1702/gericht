@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gericht</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,6 +19,243 @@
   <!-- HEADER START -->
   <header class="header">
     
+    <div class="window" id="login_form">
+      <form class="window-form animate">
+        <button class="close-btn window-form__close" onclick="closeLoginForm()">X</button>
+        <h3 class="title window-form__title">
+          Log in
+        </h3>
+        <label class="window-form__label" for="#">
+          Username
+          <input class="window-form__input" type="text" required placeholder="name@125.com">
+        </label>
+        <label class="window-form__label" for="#">
+          Password
+          <input class="window-form__input" type="password" required>
+        </label>
+        <button class="window-form__btn button" type="submit">
+          Log in
+        </button>
+        <label class="window-form__rem">
+          <input class="window-form__checkbox" type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </form>
+    </div>
+
+    <div class="window" id="registration_form">
+      <form class="window-form animate">
+        <button class="close-btn window-form__close" onclick="closeRegistrationForm()">X</button>
+        <h3 class="title window-form__title">
+          Registration
+        </h3>
+        <label class="window-form__label" for="#">
+          Username
+          <input class="window-form__input" type="text" required placeholder="Anna">
+        </label>
+        <label class="window-form__label" for="#">
+          Email address
+          <input class="window-form__input" type="email" required placeholder="anna@452.com">
+        </label>
+        <label class="window-form__label" for="#">
+          Phone
+          <input class="window-form__input" type="tel" required placeholder="+380555212514">
+        </label>
+        <label class="window-form__label" for="#">
+          Password
+          <input class="window-form__input" type="password" required>
+        </label>
+        <label class="window-form__conf">
+          <input class="window-form__checkbox" type="checkbox" checked="checked" name="confidentiality policy">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus beatae officiis aut nulla vero.
+        </label>
+        <button class="window-form__btn button register-btn" type="submit">
+          Register
+        </button>
+      </form>
+    </div>
+
+    <div class="header-container">
+      <div class="header__wrap flex">
+        <a class="logo" href="#">
+          <img class="logo__img" src="img/svg/gerícht-logo.svg" alt="gerícht-logo">
+        </a>
+        <nav class="nav-menu">
+          <ul class="nav-menu__list flex">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link nav-menu__link--active nav-link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link nav-link" href="#">
+                Pages
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link nav-link" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link nav-link" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link nav-link" href="#">
+                Landing
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-login flex">
+          <ul class="nav-login__list flex">
+            <li class="nav-login__item">
+              <a class="nav-login__link login-link" id="login_link" href="#">
+                Log in
+              </a>
+            </li>
+            <li class="nav-login__item">
+              <a class="nav-login__link" id="registration_link" href="#">
+                registration
+              </a>
+            </li>
+          </ul>
+          <a class="nav-login__link" href="#">
+            book table
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-container-slider">
+      <div class="header__inner flex">
+        <div class="header-hashtag">
+          <ul class="header-hashtag__list flex">
+            <li class="header-hashtag__item">
+              <a class="header-hashtag__link" href="#">
+                #Bar
+              </a>
+            </li>
+            <li class="header-hashtag__item">
+              <a class="header-hashtag__link" href="#">
+                #Gericht
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-slider">
+          <div class="header-slider__inner">
+            <div class="header-slider__wrap flex">
+              <div class="header-slider__item flex">
+                <div class="subtitle-left">
+                  Chase the new Flavour
+                </div>
+                <h1 class="header-title">
+                  The key to Fine dining
+                </h1>
+                <div class="header-slider__text">
+                  <p class="text">
+                    Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque
+                    sapien. Et,
+                    penatibus aliquam amet tellus
+                  </p>
+                </div>
+                <button class="button btn" type="button">
+                  Explore Menu
+                </button>
+              </div>
+              <div class="header-slider__item">
+                <div class="header-slider__box">
+                  <img class="header-slider__img" src="img/slider.png" alt="slider">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-slider__inner">
+            <div class="header-slider__wrap flex">
+              <div class="header-slider__item flex">
+                <div class="subtitle-left">
+                  Chase the new Flavour
+                </div>
+                <h1 class="header-title">
+                  The key to Fine dining
+                </h1>
+                <div class="header-slider__text">
+                  <p class="text">
+                    Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque
+                    sapien. Et,
+                    penatibus aliquam amet tellus
+                  </p>
+                </div>
+                <button class="button btn" type="button">
+                  Explore Menu
+                </button>
+              </div>
+              <div class="header-slider__item">
+                <div class="header-slider__box">
+                  <img class="header-slider__img" src="img/slider.png" alt="slider">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-slider__inner">
+            <div class="header-slider__wrap flex">
+              <div class="header-slider__item flex">
+                <div class="subtitle-left">
+                  Chase the new Flavour
+                </div>
+                <h1 class="header-title">
+                  The key to Fine dining
+                </h1>
+                <div class="header-slider__text">
+                  <p class="text">
+                    Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque
+                    sapien. Et,
+                    penatibus aliquam amet tellus
+                  </p>
+                </div>
+                <button class="button btn" type="button">
+                  Explore Menu
+                </button>
+              </div>
+              <div class="header-slider__item">
+                <div class="header-slider__box">
+                  <img class="header-slider__img" src="img/slider.png" alt="slider">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-slider__inner">
+            <div class="header-slider__wrap flex">
+              <div class="header-slider__item flex">
+                <div class="subtitle-left">
+                  Chase the new Flavour
+                </div>
+                <h1 class="header-title">
+                  The key to Fine dining
+                </h1>
+                <div class="header-slider__text">
+                  <p class="text">
+                    Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque
+                    sapien. Et,
+                    penatibus aliquam amet tellus
+                  </p>
+                </div>
+                <button class="button btn" type="button">
+                  Explore Menu
+                </button>
+              </div>
+              <div class="header-slider__item">
+                <div class="header-slider__box">
+                  <img class="header-slider__img" src="img/slider.png" alt="slider">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
   </header>
   <!-- HEADER END -->
 
@@ -29,6 +273,7 @@
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
