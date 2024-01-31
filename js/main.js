@@ -1,5 +1,15 @@
 $(function () {
 
+  $('.menu-tabs__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.menu-tabs__top-item').removeClass('menu-tabs__top-item--active');
+    $(this).addClass('menu-tabs__top-item--active');
+
+    $('.menu-tabs__content-item').removeClass('menu-tabs__content-item--active');
+    $($(this).attr('href')).addClass('menu-tabs__content-item--active');
+  });
+
+
   $('.header-slider').slick({
     dots: true,
     arrows: false,
