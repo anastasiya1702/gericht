@@ -243,6 +243,9 @@ body {
   align-items: center;
   font-weight: 700;
   transition: all 0.3s;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.64px;
 }
 
 .button:hover {
@@ -424,7 +427,6 @@ body {
 **********/
 .header {
   background-color: var(--black-200);
-  /* padding: 32px 0; */
   position: relative;
   min-height: 100vh;
 }
@@ -613,24 +615,107 @@ body {
 }
 
 .slick-dots li.slick-active button:before {
-  
   color: var(--white);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**********
 *** HEADER END ***
+**********/
+
+/**********
+*** ABOUT START ***
+**********/
+.about {
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 120px 32px 136px 32px;
+}
+
+.about::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black-200);
+  opacity: 0.5;
+}
+
+.about__wrap {
+  justify-content: space-between;
+  align-items: center;
+  gap: 85px;
+  position: relative;
+  z-index: 1;
+}
+
+.about__wrap::before {
+  position: absolute;
+  content: url(../img/svg/g.svg);
+  top: 21%;
+  left: 34%;
+  z-index: -1;
+}
+
+.about__item {
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 523px;
+  width: 100%;
+  gap: 32px;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.title-right,
+.title-left {
+  position: relative;
+  display: inline-block;
+}
+
+.title-right::before,
+.title-left::before {
+  position: absolute;
+  content: url(../img/svg/svg-title.svg);
+  bottom: -55px;
+  right: 6px;
+  transform: rotate(180deg);
+}
+
+.title-left::before {
+  bottom: -26px;
+  left: 6px;
+  transform: rotate(0);
+}
+
+.box-text {
+  text-wrap: balance;
+}
+
+.right {
+  text-align: right;
+}
+
+.about__img {
+  transition: all .9s;
+}
+
+.about__img:hover {
+  transform: rotate(180deg);
+  scale: 1.1;
+}
+
+.about__images {
+  min-width: 84px;
+  height: 703px;
+}
+/**********
+*** ABOUT END ***
 **********/
