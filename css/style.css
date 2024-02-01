@@ -177,7 +177,7 @@ body {
 .container,
 .container-big,
 .container-big-slider {
-  max-width: 1300px;
+  max-width: 1320px;
   width: 100%;
   padding: 0 10px;
   margin: 0 auto;
@@ -644,7 +644,7 @@ body {
 *** ABOUT START ***
 **********/
 .about {
-  background-image: url(../img/bg.png); 
+  background-image: url(../img/bg/bg.png); 
   padding: 120px 32px 136px 32px;
 }
 
@@ -761,7 +761,7 @@ body {
 *** MENU START ***
 **********/
 .menu-top {
-  background-image: url(../img/menu.jpg);
+  background-image: url(../img/bg/menu-bg.jpg);
   justify-content: center;
   align-items: flex-start;
   padding: 200px 0;
@@ -916,7 +916,7 @@ body {
 *** CHIEF START ***
 **********/
 .chief {
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg/bg.png);
   position: relative;
   padding: 125px 0;
 }
@@ -953,4 +953,62 @@ body {
 }
 /**********
 *** CHIEF END ***
+**********/
+
+/**********
+*** TEAM START ***
+**********/
+.team {
+  background-image: url(../img/bg/bg-team.jpg);
+  padding: 150px 0;
+}
+
+.team__wrap {
+  gap: 64px;
+  text-align: center;
+  align-items: center;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px 32px;
+}
+
+.team-list__link {
+  gap: 24px;
+  align-items: center;
+  text-align: start;
+  transition: all .5s;
+}
+.team-list__link:hover {
+  transform: translate(-50px);
+  scale: 1.1;
+  box-shadow: 0 0 3px 2px var(--yellow-100);
+  background-color: var(--black-200);
+}
+
+.team-list__box {
+  width: 200px;
+  height: 210px;
+  position: relative;
+}
+.team-list__box::before {
+  position: absolute;
+  content: url(../img/svg/paws.svg);
+  bottom: -25px;
+  right: -15px;
+}
+
+.team-list__img {
+  object-fit: cover;
+  min-width: 200px;
+  height: 210px;
+}
+
+.team-list__block {
+  gap: 16px;
+}
+/**********
+*** TEAM END ***
 **********/
