@@ -461,7 +461,7 @@ body {
     transform: scale(1)
   }
 }
-/* .sr-only {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -472,7 +472,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 /**********
 *** COMMON END ***
 **********/
@@ -1011,4 +1011,42 @@ body {
 }
 /**********
 *** TEAM END ***
+**********/
+
+/**********
+*** VIDEO START ***
+**********/
+.video {
+  background-image: url(../img/bg/video-bg.jpg);
+  height: 763px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all .5s;
+}
+.video::before {
+  opacity: 0.2;
+}
+.video:hover::before {
+  opacity: 0.4;
+}
+
+.video-link {
+  display: inline-block;
+  transition: all .5s;
+  border-radius: 50%;
+}
+.video-link:hover {
+  img{
+    box-shadow: 0 0 7px 5px var(--yellow);
+  }
+  scale: 1.1;
+}
+
+.video-link__img {
+  border-radius: 50%;
+}
+/**********
+*** VIDEO END ***
 **********/
