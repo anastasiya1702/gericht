@@ -1126,7 +1126,6 @@ body {
 *** AWARD END ***
 **********/
 
-
 /**********
 *** NEWS START ***
 **********/
@@ -1200,4 +1199,82 @@ body {
 }
 /**********
 *** NEWS END ***
+**********/
+
+/**********
+*** GALLERY START ***
+**********/
+.gallery {
+  background-image: url(../img/bg/bg.png);
+  padding: 130px 0;
+  overflow-x: hidden;
+}
+
+.gallery__wrap {
+  gap: 64px;
+  align-items: center;
+}
+
+.gallery__item:nth-child(1) {
+  min-width: 490px;
+  gap: 24px;
+}
+.gallery__item:nth-child(2) {
+  align-items: center;
+}
+
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 32px;
+  max-width: 1047px;
+  overflow-x: scroll;
+}
+.gallery-list::-webkit-scrollbar {
+  width: 12px;
+  height: 7px;
+}
+.gallery-list::-webkit-scrollbar-track {
+  background: var(--yellow-100);
+}
+.gallery-list::-webkit-scrollbar-thumb {
+  background-color: var(--yellow);
+  border-radius: 20px;
+}
+
+.gallery-list__link {
+  display: inline-block;
+  position: relative;
+  border: 1px solid transparent;
+  height: 445px;
+  transition: all .9s;
+}
+.gallery-list__link:hover{
+  border: 1px solid var(--yellow-100);
+}
+.gallery-list__link:hover::before {
+  position: absolute;
+  content: '';
+  width: 99%;
+  background-color: var(--black-100);
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.gallery-list__link:hover::after {
+  position: absolute;
+  content: url(../img/svg/instagram.svg);
+  top: 42%;
+  left: 43%;
+}
+
+.gallery-list__img {
+  min-width: 300px;
+  min-height: 447px;
+  object-fit: cover;
+}
+/**********
+*** GALLERY END ***
 **********/
