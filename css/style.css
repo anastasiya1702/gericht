@@ -227,7 +227,7 @@ body {
 }
 
 .title-box {
-  gap: 15px;
+  gap: 24px;
 }
 
 .title {
@@ -284,7 +284,7 @@ body {
   letter-spacing: 0.64px;
 }
 .button:hover {
-  box-shadow: 0 0 2px 2px var(--yellow-100);
+  box-shadow: 0 0 3px 2px var(--yellow-100);
   color: var(--black-100);
 }
 
@@ -642,6 +642,133 @@ body {
 }
 /**********
 *** HEADER END ***
+**********/
+
+/**********
+*** FOOTER START ***
+**********/
+.footer {
+  background-image: url(../img/bg/bg-team.jpg);
+  padding: 108px 0 120px 0;
+  position: relative;
+}
+.footer::after {
+  position: absolute;
+  content: '';
+  background-color: var(--black-200);
+  width: 100%;
+  height: 310px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.footer__wrap {
+  gap: 130px;
+}
+
+.form-newsletter {
+  align-items: center;
+  text-align: center;
+  gap: 64px;
+  padding: 64px 0;
+  background-color: var(--black-200);
+  border: 1px solid rgba(168, 170, 48, 0.162);
+}
+
+.form-newsletter__box {
+  gap: 32px;
+  max-width: 796px;
+  width: 100%;
+}
+
+.form-newsletter__label,
+.form-newsletter__input {
+  max-width: 635px;
+  width: 100%;
+}
+
+.form-newsletter__input {
+  padding: 10px 12px;
+  background-color: transparent;
+  border: 1px solid var(--yellow);
+  font-size: 18px;
+  color: var(--yellow-100);
+}
+.form-newsletter__input::placeholder {
+  color: var(--grey);
+  opacity: 0.7;
+  font-family: 'Cormorant Upright', serif;
+}
+
+.footer-content {
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.footer-content__item {
+  gap: 24px;
+}
+.footer-content__item:nth-child(2) {
+  gap: 32px;
+  max-width: 438px;
+  width: 100%;
+  align-items: center;
+}
+
+.footer-content__title {
+  font-size: 32px;
+  font-family: 'Cormorant Upright', serif;
+  color: var(--yellow-100);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.92px;
+  text-transform: capitalize;
+}
+
+.box-address,
+.box-work {
+  gap: 8px;
+}
+
+.footer-logo {
+  min-width: 289px;
+}
+
+.footer-text-box {
+  margin-bottom: 10px;
+  position: relative;
+}
+.footer-text-box::after {
+  position: absolute;
+  content: url(../img/svg/svg-title.svg);
+  bottom: -33px;
+  left: 45%;
+}
+
+.social-list {
+  gap: 14px;
+}
+
+.social-list__link,
+.footer-list__link {
+  transition: all .5s;
+  display: block;
+}
+.footer-list__link:hover{
+  text-decoration: underline;
+}
+.social-list__link:hover {
+  scale: 1.2;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+/**********
+*** FOOTER END ***
 **********/
 
 /**********
