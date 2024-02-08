@@ -1,5 +1,21 @@
 $(function () {
 
+
+  // gallery - slider
+
+  $('.gallery-slider').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    speed: 900,
+    centerMode: false,
+    variableWidth: true
+  });
+
+
+  // menu - tabs
+
   $('.menu-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.menu-tabs__top-item').removeClass('menu-tabs__top-item--active');
@@ -9,6 +25,8 @@ $(function () {
     $($(this).attr('href')).addClass('menu-tabs__content-item--active');
   });
 
+
+  // header - slider
 
   $('.header-slider').slick({
     dots: true,
@@ -22,7 +40,9 @@ $(function () {
     verticalSwiping: true,
     centerMode: true,
   });
+
   
+  // form-reserv
 
   $('datalist#numbers').on('change', function () {
     $('input[name="number"]').val(this.value);
@@ -54,70 +74,32 @@ $(function () {
   //   menuShadow.classList.remove('menu--open');
   // });
 
-
-  // $('.js-collapse-btn').on('click', function () {
-  //   $(this).parent().siblings().find('.js-collapse-box').slideUp();
-  //   $(this).parent().siblings().find('.js-collapse-btn').removeClass('js-collapse-btn--active');
-
-  //   $(this).siblings('.js-collapse-box').slideToggle();
-  //   $(this).toggleClass('js-collapse-btn--active');
-  // });
-
-
-  // $('.details-tabs__top-item').on('click', function (e) {
-  //   e.preventDefault();
-  //   $('.details-tabs__top-item').removeClass('details-tabs__top-item--active');
-  //   $(this).addClass('details-tabs__top-item--active');
-
-  //   $('.details-tabs__content-item').removeClass('details-tabs__content-item--active');
-  //   $($(this).attr('href')).addClass('details-tabs__content-item--active');
-  // });
-
-
-// $(document).ready(function () {
-//   $('body').append('<a href="#" id="go-top"></a>');
 });
 
-// $(function () {
-//   $.fn.scrollToTop = function () {
-//     $(this).hide().removeAttr("href");
-//     if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
-//     var scrollDiv = $(this);
-//     $(window).scroll(function () {
-//       if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
-//       else $(scrollDiv).fadeIn("slow")
-//     });
-//     $(this).click(function () {
-//       $("html, body").animate({ scrollTop: 0 }, "slow")
-//     })
-//   }
-// });
 
-// $(function () {
-//   $("#go-top").scrollToTop();
-// });
+  // btn-top go-top
 
-// document.getElementById('modal').style.display = 'none';
+$(function () {
+  $.fn.scrollToTop = function () {
+    $(this).hide().removeAttr("href");
+    if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+    var scrollDiv = $(this);
+    $(window).scroll(function () {
+      if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+      else $(scrollDiv).fadeIn("slow")
+    });
+    $(this).click(function () {
+      $("html, body").animate({ scrollTop: 0 }, "slow")
+    })
+  }
+});
 
-// function loginlink() {
-//   document.getElementById('modal').style.display = 'block';
-// }
+$(function () {
+  $("#go-top").scrollToTop();
+});
 
-// document.getElementById('login_link').addEventListener('click', function () {
-//   var loginForm = document.getElementById('login_form');
-//   // Переключение состояния видимости формы при клике на ссылку
-//   loginForm.style.display = (loginForm.style.display === 'flex') ? 'none' : 'flex';
-// });
 
-// function closeLoginForm() {
-//   var loginForm = document.getElementById('login_form');
-//   loginForm.style.display = 'none';
-// }
-
-// document.getElementById('login_link').addEventListener('click', function () {
-//   var loginForm = document.getElementById('login_form');
-//   loginForm.style.display = (loginForm.style.display === 'flex') ? 'none' : 'flex';
-// });
+  // login-form
 
 function closeLoginForm() {
   var loginForm = document.getElementById('login_form');
@@ -130,6 +112,7 @@ document.getElementById('login_link').addEventListener('click', function () {
 });
 
 
+  // registration-form
 
 function closeRegistrationForm() {
   var RegistrationForm = document.getElementById('registration_form');
