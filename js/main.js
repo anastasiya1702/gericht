@@ -30,15 +30,19 @@ $(function () {
 
   $('.header-slider').slick({
     dots: true,
+    customPaging: function (slider, i) {
+      var slideNumber = i + 1;
+      var formattedNumber = slideNumber < 10 ? '0' + slideNumber : slideNumber;
+      return '<span>' + formattedNumber + '</span>';
+    },
     arrows: false,
-    fade: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: true,
     autoplay: false,
     autoplaySpeed: 2000,
     verticalSwiping: true,
-    centerMode: true,
+    centerMode: false,
   });
 
   
