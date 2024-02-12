@@ -1,0 +1,28 @@
+/**********
+*** ABOUT START ***
+**********/
+.about-barhome {
+  background-image: url(../img/bg/bg.png);
+  padding: 128px 0;
+}
+
+.about-barhome__wrap {
+  justify-content: space-between;
+  align-items: end;
+  padding: 0px 32px;
+}
+
+.about-barhome__item:nth-child(2) {
+  max-width: 634px;
+  width: 100%;
+  gap: 32px;
+}
+
+.about-barhome__box--vertical {
+  max-width: 523px;
+  width: 100%;
+  height: 702px;
+}
+/**********
+*** ABOUT END ***
+**********/

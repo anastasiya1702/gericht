@@ -430,7 +430,8 @@ body {
 .bg-bite__video,
 .bg-bite__blog,
 .bg-bite__gallery,
-.bg-bite__menu-bottom {
+.bg-bite__menu-bottom,
+.bg-bite__about-barhome {
   position: relative;
 }
 .bg-bite::before {
@@ -463,6 +464,10 @@ body {
 .bg-bite__menu-bottom::before {
   top: 5%;
   right: 11%;
+}
+.bg-bite__about-barhome::before {
+  top: 2%;
+  left: 6%;
 }
 .bg-bite::before {
   animation: 7s linear 0s normal none infinite running rot;
