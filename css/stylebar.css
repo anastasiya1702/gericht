@@ -1,5 +1,5 @@
 /**********
-*** ABOUT START ***
+*** ABOUTBARHOME START ***
 **********/
 .about-barhome {
   background-image: url(../img/bg/bg.png);
@@ -24,5 +24,65 @@
   height: 702px;
 }
 /**********
-*** ABOUT END ***
+*** ABOUTBARHOME END ***
+**********/
+
+/**********
+*** SELECTION START ***
+**********/
+.selection {
+  background-color: var(--black-200);
+  padding: 152px 0;
+  text-align: center;
+}
+
+.selection__wrap {
+  gap: 64px;
+}
+
+.selection-list {
+  gap: 32px;
+}
+.selection-list__title {
+  z-index: 0;
+  transform: translateX(-300%);
+  transition: all 1s;
+}
+
+.selection-list__item {
+  border: 1px solid var(--yellow-200);
+  width: 410px;
+  height: 600px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.selection-list__item::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black-200);
+  opacity: 0.4;
+  display: none;
+}
+.selection-list__item:hover::before{
+  display: block;
+}
+.selection-list__item:hover .selection-list__title {
+  transform: translateX(0%);
+  z-index: 1;
+}
+/**********
+*** SELECTION END ***
 **********/

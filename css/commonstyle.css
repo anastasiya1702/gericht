@@ -72,9 +72,11 @@
   --white-100: #FAFAFA;
 
   --grey: #AAA;
+  --grey-100: #c4c4c4;
 
   --yellow: #DCCA87;
   --yellow-100: #F5EFDB;
+  --yellow-200: #dcca874d;
 
   accent-color: var(--yellow-100);
 }
@@ -249,7 +251,8 @@ body {
 }
 
 .subtitle-left,
-.subtitle-center {
+.subtitle-center,
+.selection-subtitle {
   display: inline-block;
   font-family: "Cormorant Upright";
   color: var(--white);
@@ -261,7 +264,8 @@ body {
   position: relative;
 }
 .subtitle-left::before,
-.subtitle-center::before {
+.subtitle-center::before,
+.selection-subtitle::before {
   position: absolute;
   content: url(../img/svg/svg-title.svg);
   bottom: -20px;
@@ -269,6 +273,9 @@ body {
 }
 .subtitle-center::before {
   left: 45%;
+}
+.selection-subtitle::before {
+  left: 48%;
 }
 
 .title-xl,
@@ -293,6 +300,10 @@ body {
 
 .footer-content__title {
   color: var(--yellow-100);
+}
+.selection-list__title {
+  font-size: 45px;
+  color: var(--white);
 }
 
 .text-italic {
