@@ -86,3 +86,53 @@
 /**********
 *** SELECTION END ***
 **********/
+
+/**********
+*** WORK START ***
+**********/
+.work {
+  background-image: url(../img/bg/work-bg.jpg);
+  padding: 150px 0;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+}
+/**********
+*** WORK END ***
+**********/
+
+/**********
+*** CONTACTS START ***
+**********/
+.contacts {
+  padding: 128px 0;
+  background-image: url(../img/bg/bg.png);
+}
+
+.contacts__wrap {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__item:nth-child(1) {
+  gap: 64px;
+}
+
+.contacts-block {
+  gap: 32px;
+}
+
+.contacts-block__hours {
+  gap: 16px;
+}
+
+.contacts-block__text {
+  color: var(--white);
+}
+
+.img-box__contacts {
+  max-height: 688px;
+}
+/**********
+*** CONTACTS END ***
+**********/
