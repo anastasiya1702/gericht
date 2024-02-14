@@ -13,850 +13,864 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/stylebar.css">
 </head>
-<body>
+<body data-barba="wrapper">
 
-  <!-- HEADER START -->
-  <header class="header header-bg bg-img">
-    
-    <div class="window" id="login_form">
-      <form class="window-form animate flex-direction">
-        <button class="close-btn window-form__close" onclick="closeLoginForm()">X</button>
-        <h3 class="title window-form__title">
-          Log in
-        </h3>
-        <label class="window-form__label">
-          Username
-          <input class="window-form__input" type="text" required placeholder="name@125.com">
-        </label>
-        <label class="window-form__label">
-          Password
-          <input class="window-form__input" type="password" required>
-        </label>
-        <button class="window-form__btn button" type="submit">
-          Log in
-        </button>
-        <label class="window-form__rem">
-          <input class="window-form__checkbox" type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </form>
-    </div>
+  <div class="box"></div>
 
-    <div class="window" id="registration_form">
-      <form class="window-form animate flex-direction">
-        <button class="close-btn window-form__close" onclick="closeRegistrationForm()">X</button>
-        <h3 class="title window-form__title">
-          Registration
-        </h3>
-        <label class="window-form__label">
-          Username
-          <input class="window-form__input" type="text" required placeholder="Anna">
-        </label>
-        <label class="window-form__label">
-          Email address
-          <input class="window-form__input" type="email" required placeholder="anna@452.com">
-        </label>
-        <label class="window-form__label">
-          Phone
-          <input class="window-form__input" type="tel" required placeholder="+380555212514">
-        </label>
-        <label class="window-form__label">
-          Password
-          <input class="window-form__input" type="password" required>
-        </label>
-        <label class="window-form__conf">
-          <input class="window-form__checkbox" type="checkbox" checked="checked" name="confidentiality policy">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus beatae officiis aut nulla vero.
-        </label>
-        <button class="window-form__btn button register-btn" type="submit">
-          Register
-        </button>
-      </form>
-    </div>
+  <div class="wrapper">
 
-    <div class="container-big">
-      <div class="header__wrap flex">
-        <a class="logo" href="#">
-          <img class="logo__img" src="img/svg/gerícht-logo.svg" alt="gerícht-logo">
-        </a>
-        <nav class="nav-menu">
-          <ul class="nav-menu__list flex">
-            <li class="nav-menu__item">
-              <a class="nav-menu__link nav-menu__link--active nav-link" href="#">
-                Home
-              </a>
-            </li>
-            <li class="nav-menu__item">
-              <a class="nav-menu__link nav-link" href="#">
-                Pages
-              </a>
-            </li>
-            <li class="nav-menu__item">
-              <a class="nav-menu__link nav-link" href="#">
-                Contact Us
-              </a>
-            </li>
-            <li class="nav-menu__item">
-              <a class="nav-menu__link nav-link" href="#">
-                Blog
-              </a>
-            </li>
-            <li class="nav-menu__item">
-              <a class="nav-menu__link nav-link" href="#">
-                Landing
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="nav-login flex">
-          <ul class="nav-login__list flex">
-            <li class="nav-login__item">
-              <a class="nav-login__link login-link" id="login_link" href="#">
-                Log in
-              </a>
-            </li>
-            <li class="nav-login__item">
-              <a class="nav-login__link" id="registration_link" href="#">
-                registration
-              </a>
-            </li>
-          </ul>
-          <a class="nav-login__link" href="#">
-            book table
-          </a>
+    <div class="inner" data-barba="container" data-barba-namespace="home">
+
+      <!-- HEADER START -->
+      <header class="header header-bg bg-img">
+        
+        <div class="window" id="login_form">
+          <form class="window-form animate flex-direction">
+            <button class="close-btn window-form__close" onclick="closeLoginForm()">X</button>
+            <h3 class="title window-form__title">
+              Log in
+            </h3>
+            <label class="window-form__label">
+              Username
+              <input class="window-form__input" type="text" required placeholder="name@125.com">
+            </label>
+            <label class="window-form__label">
+              Password
+              <input class="window-form__input" type="password" required>
+            </label>
+            <button class="window-form__btn button" type="submit">
+              Log in
+            </button>
+            <label class="window-form__rem">
+              <input class="window-form__checkbox" type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </form>
         </div>
-      </div>
-    </div>
-    <div class="container-big-slider container-bar-slider">
-      <div class="header__inner flex">
-        <div class="header-hashtag bar-hashtag">
-          <ul class="header-hashtag__list flex">
-            <li class="header-hashtag__item">
-              <a class="header-hashtag__link" href="#">
-                #Bar
-              </a>
-            </li>
-            <li class="header-hashtag__item">
-              <a class="header-hashtag__link" href="#">
-                #Gericht
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="header-slider">
-          <div class="header-slider__inner">
-            <div class="header-slider__wrap flex-direction header-slider__position">
-              <div class="box-title">
-                <h1 class="slider-title">
-                  On the Rocks
-                </h1>
-              </div>
-              <div class="header-slider__item">
-                <img class="header-slider-img" src="img/bar-slider.png" alt="slider">
-              </div>
-            </div>
-          </div>
-          <div class="header-slider__inner">
-            <div class="header-slider__wrap flex-direction header-slider__position">
-              <div class="box-title">
-                <h1 class="slider-title">
-                  On the Rocks
-                </h1>
-              </div>
-              <div class="header-slider__item">
-                <img class="header-slider-img" src="img/bar-slider-2.png" alt="slider">
-              </div>
-            </div>
-          </div>
-          <div class="header-slider__inner">
-            <div class="header-slider__wrap flex-direction header-slider__position">
-              <div class="box-title">
-                <h1 class="slider-title">
-                  On the Rocks
-                </h1>
-              </div>
-              <div class="header-slider__item">
-                <img class="header-slider-img" src="img/bar-slider.png" alt="slider">
-              </div>
-            </div>
-          </div>
-          <div class="header-slider__inner">
-            <div class="header-slider__wrap flex-direction header-slider__position">
-              <div class="box-title">
-                <h1 class="slider-title">
-                  On the Rocks
-                </h1>
-              </div>
-              <div class="header-slider__item">
-                <img class="header-slider-img" src="img/bar-slider-2.png" alt="slider">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- HEADER END -->
 
-  <button class="flex-direction" id="go-top">Top
-    <svg width="2" height="61" viewBox="0 0 2 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 61L1.00001 9.53674e-07" stroke="url(#paint0_linear_566_1693)"/>
-      <defs>
-        <linearGradient id="paint0_linear_566_1693" x1="29.5042" y1="-11.8571" x2="29.5042" y2="78.2931"
-          gradientUnits="userSpaceOnUse">
-          <stop offset="0.430036" stop-color="#DCCA87"/>
-          <stop offset="0.430036" stop-color="#DCCA87"/>
-          <stop offset="0.927083" stop-color="#DCCA87" stop-opacity="0.24"/>
-        </linearGradient>
-      </defs>
-    </svg>
-  </button>
-
-  <!-- MAIN START -->
-  <main class="main">
-
-    <!-- RESERV START -->
-    <section class="reserv bg-bite">
-      <div class="container">
-        <div class="reserv__wrap">
-          <form class="reserv-form flex-direction bg-form">
-            <div class="title-box flex-direction">
-              <p class="subtitle-center">
-                Reservations
-              </p>
-              <h2 class="title">
-                Book A Table
-              </h2>
-            </div>
-            <div class="label-box flex">
-              <label class="reserv-form__label">
-                <input class="reserv-form__input form-input" name="number" list="numbers" placeholder="1 Persone">
-                <datalist id="numbers">
-                  <option value="1 Persone">
-                  <option value="2 Persons">
-                  <option value="3 Persons">
-                  <option value="4 Persons">
-                  <option value="5 Persons">
-                </datalist>
-              </label>
-              <label class="reserv-form__label">
-                <input class="reserv-form__input form-input" name="date" list="dates"  placeholder="12/05/2021">
-                <datalist id="dates">
-                  <option value="12/05/2024">
-                  <option value="13/05/2024">
-                  <option value="14/05/2024">
-                  <option value="15/05/2024">
-                  <option value="16/05/2024">
-                </datalist>
-              </label>
-              <label class="reserv-form__label">
-                <input class="reserv-form__input form-input" name="datetime" list="datetimes" placeholder="11:00 AM">
-                <datalist id="datetimes">
-                  <option value="11:00 AM">
-                  <option value="12:00 AM">
-                  <option value="13:00 AM">
-                  <option value="14:00 AM">
-                  <option value="15:00 AM">
-                </datalist>
-              </label>
-            </div>
-            <button class="button btn" type="submit">
-              Book Now
+        <div class="window" id="registration_form">
+          <form class="window-form animate flex-direction">
+            <button class="close-btn window-form__close" onclick="closeRegistrationForm()">X</button>
+            <h3 class="title window-form__title">
+              Registration
+            </h3>
+            <label class="window-form__label">
+              Username
+              <input class="window-form__input" type="text" required placeholder="Anna">
+            </label>
+            <label class="window-form__label">
+              Email address
+              <input class="window-form__input" type="email" required placeholder="anna@452.com">
+            </label>
+            <label class="window-form__label">
+              Phone
+              <input class="window-form__input" type="tel" required placeholder="+380555212514">
+            </label>
+            <label class="window-form__label">
+              Password
+              <input class="window-form__input" type="password" required>
+            </label>
+            <label class="window-form__conf">
+              <input class="window-form__checkbox" type="checkbox" checked="checked" name="confidentiality policy">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus beatae officiis aut nulla vero.
+            </label>
+            <button class="window-form__btn button register-btn" type="submit">
+              Register
             </button>
           </form>
         </div>
-      </div>
-    </section>
-    <!-- RESERV END -->
 
-    <!-- ABOUTBARHOME START -->
-    <aside class="bg-bite bg-bite__about-barhome">
-      <section class="about-barhome bg-img">
-        <div class="container">
-          <div class="about-barhome__wrap flex">
-            <div class="about-barhome__item">
-              <div class="about-barhome__box about-barhome__box--vertical">
-                <img class="about-barhome__img" src="img/drink-3.jpg" alt="drinks">
-              </div>
-            </div>
-            <div class="about-barhome__item flex-direction">
-              <div class="about-barhome__box">
-                <img class="about-barhome__img" src="img/drink-4.jpg" alt="drinks">
-              </div>
-              <div class="title-box flex-direction">
-                <p class="subtitle-left">
-                  About Us
-                </p>
-                <h2 class="title">
-                  Food, Drinks, entertainment in one
-                </h2>
-              </div>
-              <div class="box-text">
-                <p class="text">
-                  Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi
-                  aliquam In sed odio nec aliquet.
-                </p>
-              </div>
-              <a class="button btn" href="#">
-                Know More
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </aside>
-    <!-- ABOUTBARHOME END -->
-
-    <!-- SELECTION START -->
-    <section class="selection">
-      <div class="container">
-        <div class="selection__wrap flex-direction">
-          <div class="title-box flex-direction">
-            <p class="subtitle-center selection-subtitle">
-              Wide Range to choose from
-            </p>
-            <h2 class="title">
-              What’s Your Poison?
-            </h2>
-          </div>
-          <ul class="selection-list flex">
-            <li class="selection-list__item flex" style="background-image: url(img/drink-1.jpg);">
-              <figcaption class="selection-list__title title-x">
-                Beer
-              </figcaption>
-            </li>
-            <li class="selection-list__item flex" style="background-image: url(img/drink-2.png);">
-
-              <figcaption class="selection-list__title title-x">
-                Wine
-              </figcaption>
-            </li>
-            <li class="selection-list__item flex" style="background-image: url(img/drink-5.png);">
-              <figcaption class="selection-list__title title-x">
-                Cocktails
-              </figcaption>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- SELECTION END -->
-
-    <!-- WORK START -->
-    <section class="work bg-img flex">
-      <div class="container">
-        <div class="work__wrap">
-          <div class="title-box flex-direction">
-            <h2 class="title title-xxl">
-              Happy Hours
-            </h2>
-            <p class="work-subtitle">
-              Monday - Friday (4:00 Pm - 7:00 pm)
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- WORK END -->
-
-    <!-- MENU START -->
-    <aside class="bg-bite bg-bite__menu-bottom">
-      <section class=" menu menu-bottom">
-        <div class="container">
-          <div class="menu-tabs__content">
-            <div class="menu-tabs__content-item menu-tabs__content-item--active" id="tab-1">
-              <div class="menu__inner flex-direction">
-                <div class="title-box flex-direction">
-                  <p class="subtitle-center">
-                    Menu that fits you palatte
-                  </p>
-                  <h2 class="title">
-                    Today’s Special
-                  </h2>
-                </div>
-                <div class="menu__content flex">
-                  <div class="menu__item flex-direction">
-                    <h3 class="menu-title">
-                      Wine & Beer
-                    </h3>
-                    <ul class="menu-list flex-direction">
-                      <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">
-                          <div class="menu-list__box flex">
-                            <p class="menu-list__title title-x">
-                              Chapel Hill Shiraz
-                            </p>
-                            <div class="menu-list__price title-x">
-                              $56
-                            </div>
-                          </div>
-                          <ul class="composition-list flex">
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                AU
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Bottle
-                              </span>
-                            </li>
-                          </ul>
-                        </a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">
-                          <div class="menu-list__box flex">
-                            <p class="menu-list__title title-x">
-                              Catena Malbec
-                            </p>
-                            <div class="menu-list__price title-x">
-                              $59
-                            </div>
-                          </div>
-                          <ul class="composition-list flex">
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                AR
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Bottle
-                              </span>
-                            </li>
-                          </ul>
-                        </a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">
-                          <div class="menu-list__box flex">
-                            <p class="menu-list__title title-x">
-                              La Vieille Rosé
-                            </p>
-                            <div class="menu-list__price title-x">
-                              $44
-                            </div>
-                          </div>
-                          <ul class="composition-list flex">
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                FR
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                750 ml
-                              </span>
-                            </li>
-                          </ul>
-                        </a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">
-                          <div class="menu-list__box flex">
-                            <p class="menu-list__title title-x">
-                              Rhino Pale Ale
-                            </p>
-                            <div class="menu-list__price title-x">
-                              $31
-                            </div>
-                          </div>
-                          <ul class="composition-list flex">
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                CA
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                750 ml
-                              </span>
-                            </li>
-                          </ul>
-                        </a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">
-                          <div class="menu-list__box flex">
-                            <p class="menu-list__title title-x">
-                              Irish Guinness
-                            </p>
-                            <div class="menu-list__price title-x">
-                              $26
-                            </div>
-                          </div>
-                          <ul class="composition-list flex">
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                IE
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                750 ml
-                              </span>
-                            </li>
-                          </ul>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="menu__item">
-                    <div class="menu__images">
-                      <img class="menu__img images" src="img/menu-bar.jpg" alt="menu-bar">
-                    </div>
-                  </div>
-                  <div class="menu__item flex-direction">
-                    <h3 class="menu-title">
-                      Cocktails
-                    </h3>
-                    <ul class="menu-list flex-direction">
-                      <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">
-                          <div class="menu-list__box flex">
-                            <p class="menu-list__title title-x">
-                              Aperol Spritz
-                            </p>
-                            <div class="menu-list__price title-x">
-                              $20
-                            </div>
-                          </div>
-                          <ul class="composition-list flex">
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Aperol
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Villa 
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Marchesi prosecco
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                soda 
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                30ml
-                              </span>
-                            </li>
-                          </ul>
-                        </a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">
-                          <div class="menu-list__box flex">
-                            <p class="menu-list__title title-x">
-                              Dark 'N' Stormy
-                            </p>
-                            <div class="menu-list__price title-x">
-                              $16
-                            </div>
-                          </div>
-                          <ul class="composition-list flex">
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Dark rum
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Ginger beer
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Slice of lime.
-                              </span>
-                            </li>
-                          </ul>
-                        </a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">
-                          <div class="menu-list__box flex">
-                            <p class="menu-list__title title-x">
-                              Daiquiri
-                            </p>
-                            <div class="menu-list__price title-x">
-                              $10
-                            </div>
-                          </div>
-                          <ul class="composition-list flex">
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Rum
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Citrus juice
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Sugar
-                              </span>
-                            </li>
-                          </ul>
-                        </a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">
-                          <div class="menu-list__box flex">
-                            <p class="menu-list__title title-x">
-                              Old Fashioned
-                            </p>
-                            <div class="menu-list__price title-x">
-                              $31
-                            </div>
-                          </div>
-                          <ul class="composition-list flex">
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Bourbon 
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Brown sugar
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Angostura Bitters
-                              </span>
-                            </li>
-                          </ul>
-                        </a>
-                      </li>
-                      <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">
-                          <div class="menu-list__box flex">
-                            <p class="menu-list__title title-x">
-                              Negroni
-                            </p>
-                            <div class="menu-list__price title-x">
-                              $26
-                            </div>
-                          </div>
-                          <ul class="composition-list flex">
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Gin 
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Sweet Vermouth
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Campari
-                              </span>
-                            </li>
-                            <li class="composition-list__item">
-                              <span class="composition-list__span">
-                                Orange garnish
-                              </span>
-                            </li>
-                          </ul>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <a class="button btn" href="#">
-                  View More
-                </a>
-              </div>
-            </div>
-            <div class="menu-tabs__content-item" id="tab-2">
-              content-2
-            </div>
-            <div class="menu-tabs__content-item" id="tab-3">
-              content-3
-            </div>
-          </div>
-        </div>
-      </section>
-    </aside>
-    <!-- MENU END -->
-
-    <!-- CONTACTS START -->
-    <aside class="bg-bite bg-bite__contacts">
-      <section class="contacts bg-img">
-        <div class="container">
-          <div class="contacts__wrap flex">
-            <div class="contacts__item flex-direction">
-              <div class="title-box flex-direction">
-                <p class="subtitle-left">
-                  Contact
-                </p>
-                <h2 class="title">
-                  Find Us
-                </h2>
-              </div>
-              <div class="contacts-block flex-direction">
-                <div class="box-text">
-                  <p class="text">
-                    Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG
-                  </p>
-                </div>
-                <div class="contacts-block__hours flex-direction">
-                  <h5 class="title title-x">
-                    Opening Hours
-                  </h5>
-                  <p class="contacts-block__text">
-                    Mon - Fri: 10:00 am - 02:00 am
-                  </p>
-                  <p class="contacts-block__text">
-                    Sat - Sun: 10:00 am - 03:00 am
-                  </p>
-                </div>
-              </div> 
-              <a class="button btn" href="#">
-                Visit Us
-              </a>
-            </div>
-            <div class="contacts__item">
-              <div class="img-box img-box__contacts">
-                <img class="img-box__images" src="img/contacts.png" alt="contacts">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </aside>
-    <!-- CONTACTS -->
-
-  </main>
-  <!-- MAIN END -->
-
-  <!-- FOOTER START -->
-  <aside class="bg-bite"></aside>
-  <footer class="footer bg-img">
-    <div class="container">
-      <div class="footer__wrap flex-direction">
-        <form class="form-newsletter bg-form flex-direction">
-          <div class="title-box flex-direction">
-            <p class="subtitle-center">
-              Newsletter
-            </p>
-            <h2 class="title">
-              Subscribe to Our Newsletter
-            </h2>
-            <div class="box-text">
-              <p class="text">
-                And never miss latest Updates!
-              </p>
-            </div>
-          </div>
-          <div class="form-newsletter__box flex">
-            <label class="form-newsletter__label">
-              <input class="form-newsletter__input form-input" type="email" placeholder="Email Address">
-            </label>
-            <button class="button btn">
-              Subscribe
-            </button>
-          </div>
-        </form>
-        <div class="footer-content flex">
-          <div class="footer-content__item flex-direction">
-            <h3 class="footer-content__title title-xl">
-              Contact Us
-            </h3>
-            <div class="box-address flex-direction">
-              <p class="text">
-                9 W 53rd St, New York, NY 10019, USA
-              </p>
-              <ul class="footer-list">
-                <li class="footer-list__item">
-                  <a class="footer-list__link" href="tel:12123441230">
-                    +1 212-344-1230
+        <div class="container-big">
+          <div class="header__wrap flex">
+            <a class="logo" href="#">
+              <img class="logo__img" src="img/svg/gerícht-logo.svg" alt="gerícht-logo">
+            </a>
+            <nav class="nav-menu">
+              <ul class="nav-menu__list flex">
+                <li class="nav-menu__item">
+                  <a class="nav-menu__link nav-menu__link--active nav-link" href="#">
+                    Home
                   </a>
                 </li>
-                <li class="footer-list__item">
-                  <a class="footer-list__link" href="tel:12125551230">
-                    +1 212-555-1230
+                <li class="nav-menu__item">
+                  <a class="nav-menu__link nav-link" href="#">
+                    Pages
+                  </a>
+                </li>
+                <li class="nav-menu__item">
+                  <a class="nav-menu__link nav-link" href="#">
+                    Contact Us
+                  </a>
+                </li>
+                <li class="nav-menu__item">
+                  <a class="nav-menu__link nav-link" href="#">
+                    Blog
+                  </a>
+                </li>
+                <li class="nav-menu__item">
+                  <a class="nav-menu__link nav-link" href="#">
+                    Landing
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="nav-login flex">
+              <ul class="nav-login__list flex">
+                <li class="nav-login__item">
+                  <a class="nav-login__link login-link" id="login_link" href="#">
+                    Log in
+                  </a>
+                </li>
+                <li class="nav-login__item">
+                  <a class="nav-login__link" id="registration_link" href="#">
+                    registration
+                  </a>
+                </li>
+              </ul>
+              <a class="nav-login__link" href="#">
+                book table
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container-big-slider container-bar-slider">
+          <div class="header__inner flex">
+            <div class="header-hashtag bar-hashtag">
+              <ul class="header-hashtag__list flex">
+                <li class="header-hashtag__item">
+                  <a class="header-hashtag__link header-hashtag__link--active" href="barhome.html">
+                    #Bar
+                  </a>
+                </li>
+                <li class="header-hashtag__item">
+                  <a class="header-hashtag__link" href="index.html">
+                    #Gericht
                   </a>
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="footer-content__item flex-direction">
-            <a class="logo" href="#">
-              <img class="logo__img footer-logo" src="img/svg/gerícht-logo-y.svg" alt="gerícht-logo">
-            </a>
-            <div class="box-text footer-text-box">
-              <p class="text footer-text">
-                "The best way to find yourself is to lose yourself in the service of others.”
-              </p>
-            </div>
-            <ul class="social-list flex">
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img class="social-list__img" src="img/svg/facebook.svg" alt="facebook">
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img class="social-list__img" src="img/svg/twitter.svg" alt="twitter">
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img class="social-list__img" src="img/svg/instagram-1.svg" alt="instagram">
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-content__item flex-direction">
-            <h3 class="footer-content__title title-xl">
-              Working Hours
-            </h3>
-            <div class="box-work flex-direction">
-              <div class="box-work__one">
-                <p class="text">
-                  Monday-Friday:
-                </p>
-                <span class="text">
-                  08:00 am -12:00 am
-                </span>
+            <div class="header-slider barhome-slider">
+              <div class="header-slider__inner">
+                <div class="header-slider__wrap flex-direction header-slider__position">
+                  <div class="box-title">
+                    <h1 class="slider-title">
+                      On the Rocks
+                    </h1>
+                  </div>
+                  <div class="header-slider__item">
+                    <img class="header-slider-img" src="img/bar-slider.png" alt="slider">
+                  </div>
+                </div>
               </div>
-              <div class="box-work__two">
-                <p class="text">
-                  Saturday-Sunday:
-                </p>
-                <span class="text">
-                  07:00am -11:00 pm
-                </span>
-              </div>  
+              <div class="header-slider__inner">
+                <div class="header-slider__wrap flex-direction header-slider__position">
+                  <div class="box-title">
+                    <h1 class="slider-title">
+                      On the Rocks
+                    </h1>
+                  </div>
+                  <div class="header-slider__item">
+                    <img class="header-slider-img" src="img/bar-slider-2.png" alt="slider">
+                  </div>
+                </div>
+              </div>
+              <div class="header-slider__inner">
+                <div class="header-slider__wrap flex-direction header-slider__position">
+                  <div class="box-title">
+                    <h1 class="slider-title">
+                      On the Rocks
+                    </h1>
+                  </div>
+                  <div class="header-slider__item">
+                    <img class="header-slider-img" src="img/bar-slider.png" alt="slider">
+                  </div>
+                </div>
+              </div>
+              <div class="header-slider__inner">
+                <div class="header-slider__wrap flex-direction header-slider__position">
+                  <div class="box-title">
+                    <h1 class="slider-title">
+                      On the Rocks
+                    </h1>
+                  </div>
+                  <div class="header-slider__item">
+                    <img class="header-slider-img" src="img/bar-slider-2.png" alt="slider">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-copy text">
-          2021 Gerícht. All Rights reserved.
-        </p>
-      </div>
+      </header>
+      <!-- HEADER END -->
+
+      <button class="flex-direction" id="go-top">Top
+        <svg width="2" height="61" viewBox="0 0 2 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 61L1.00001 9.53674e-07" stroke="url(#paint0_linear_566_1693)"/>
+          <defs>
+            <linearGradient id="paint0_linear_566_1693" x1="29.5042" y1="-11.8571" x2="29.5042" y2="78.2931"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0.430036" stop-color="#DCCA87"/>
+              <stop offset="0.430036" stop-color="#DCCA87"/>
+              <stop offset="0.927083" stop-color="#DCCA87" stop-opacity="0.24"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </button>
+
+      <!-- MAIN START -->
+      <main class="main">
+
+        <!-- RESERV START -->
+        <section class="reserv bg-bite">
+          <div class="container">
+            <div class="reserv__wrap">
+              <form class="reserv-form flex-direction bg-form">
+                <div class="title-box flex-direction">
+                  <p class="subtitle-center">
+                    Reservations
+                  </p>
+                  <h2 class="title">
+                    Book A Table
+                  </h2>
+                </div>
+                <div class="label-box flex">
+                  <label class="reserv-form__label">
+                    <input class="reserv-form__input form-input" name="number" list="numbers" placeholder="1 Persone">
+                    <datalist id="numbers">
+                      <option value="1 Persone">
+                      <option value="2 Persons">
+                      <option value="3 Persons">
+                      <option value="4 Persons">
+                      <option value="5 Persons">
+                    </datalist>
+                  </label>
+                  <label class="reserv-form__label">
+                    <input class="reserv-form__input form-input" name="date" list="dates"  placeholder="12/05/2021">
+                    <datalist id="dates">
+                      <option value="12/05/2024">
+                      <option value="13/05/2024">
+                      <option value="14/05/2024">
+                      <option value="15/05/2024">
+                      <option value="16/05/2024">
+                    </datalist>
+                  </label>
+                  <label class="reserv-form__label">
+                    <input class="reserv-form__input form-input" name="datetime" list="datetimes" placeholder="11:00 AM">
+                    <datalist id="datetimes">
+                      <option value="11:00 AM">
+                      <option value="12:00 AM">
+                      <option value="13:00 AM">
+                      <option value="14:00 AM">
+                      <option value="15:00 AM">
+                    </datalist>
+                  </label>
+                </div>
+                <button class="button btn" type="submit">
+                  Book Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- RESERV END -->
+
+        <!-- ABOUTBARHOME START -->
+        <aside class="bg-bite bg-bite__about-barhome">
+          <section class="about-barhome bg-img">
+            <div class="container">
+              <div class="about-barhome__wrap flex">
+                <div class="about-barhome__item">
+                  <div class="about-barhome__box about-barhome__box--vertical">
+                    <img class="about-barhome__img" src="img/drink-3.jpg" alt="drinks">
+                  </div>
+                </div>
+                <div class="about-barhome__item flex-direction">
+                  <div class="about-barhome__box">
+                    <img class="about-barhome__img" src="img/drink-4.jpg" alt="drinks">
+                  </div>
+                  <div class="title-box flex-direction">
+                    <p class="subtitle-left">
+                      About Us
+                    </p>
+                    <h2 class="title">
+                      Food, Drinks, entertainment in one
+                    </h2>
+                  </div>
+                  <div class="box-text">
+                    <p class="text">
+                      Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi
+                      aliquam In sed odio nec aliquet.
+                    </p>
+                  </div>
+                  <a class="button btn" href="#">
+                    Know More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </aside>
+        <!-- ABOUTBARHOME END -->
+
+        <!-- SELECTION START -->
+        <section class="selection">
+          <div class="container">
+            <div class="selection__wrap flex-direction">
+              <div class="title-box flex-direction">
+                <p class="subtitle-center selection-subtitle">
+                  Wide Range to choose from
+                </p>
+                <h2 class="title">
+                  What’s Your Poison?
+                </h2>
+              </div>
+              <ul class="selection-list flex">
+                <li class="selection-list__item flex" style="background-image: url(img/drink-1.jpg);">
+                  <figcaption class="selection-list__title title-x">
+                    Beer
+                  </figcaption>
+                </li>
+                <li class="selection-list__item flex" style="background-image: url(img/drink-2.png);">
+
+                  <figcaption class="selection-list__title title-x">
+                    Wine
+                  </figcaption>
+                </li>
+                <li class="selection-list__item flex" style="background-image: url(img/drink-5.png);">
+                  <figcaption class="selection-list__title title-x">
+                    Cocktails
+                  </figcaption>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- SELECTION END -->
+
+        <!-- WORK START -->
+        <section class="work bg-img flex">
+          <div class="container">
+            <div class="work__wrap">
+              <div class="title-box flex-direction">
+                <h2 class="title title-xxl">
+                  Happy Hours
+                </h2>
+                <p class="work-subtitle">
+                  Monday - Friday (4:00 Pm - 7:00 pm)
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- WORK END -->
+
+        <!-- MENU START -->
+        <aside class="bg-bite bg-bite__menu-bottom">
+          <section class=" menu menu-bottom">
+            <div class="container">
+              <div class="menu-tabs__content">
+                <div class="menu-tabs__content-item menu-tabs__content-item--active" id="tab-1">
+                  <div class="menu__inner flex-direction">
+                    <div class="title-box flex-direction">
+                      <p class="subtitle-center">
+                        Menu that fits you palatte
+                      </p>
+                      <h2 class="title">
+                        Today’s Special
+                      </h2>
+                    </div>
+                    <div class="menu__content flex">
+                      <div class="menu__item flex-direction">
+                        <h3 class="menu-title">
+                          Wine & Beer
+                        </h3>
+                        <ul class="menu-list flex-direction">
+                          <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                              <div class="menu-list__box flex">
+                                <p class="menu-list__title title-x">
+                                  Chapel Hill Shiraz
+                                </p>
+                                <div class="menu-list__price title-x">
+                                  $56
+                                </div>
+                              </div>
+                              <ul class="composition-list flex">
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    AU
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Bottle
+                                  </span>
+                                </li>
+                              </ul>
+                            </a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                              <div class="menu-list__box flex">
+                                <p class="menu-list__title title-x">
+                                  Catena Malbec
+                                </p>
+                                <div class="menu-list__price title-x">
+                                  $59
+                                </div>
+                              </div>
+                              <ul class="composition-list flex">
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    AR
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Bottle
+                                  </span>
+                                </li>
+                              </ul>
+                            </a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                              <div class="menu-list__box flex">
+                                <p class="menu-list__title title-x">
+                                  La Vieille Rosé
+                                </p>
+                                <div class="menu-list__price title-x">
+                                  $44
+                                </div>
+                              </div>
+                              <ul class="composition-list flex">
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    FR
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    750 ml
+                                  </span>
+                                </li>
+                              </ul>
+                            </a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                              <div class="menu-list__box flex">
+                                <p class="menu-list__title title-x">
+                                  Rhino Pale Ale
+                                </p>
+                                <div class="menu-list__price title-x">
+                                  $31
+                                </div>
+                              </div>
+                              <ul class="composition-list flex">
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    CA
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    750 ml
+                                  </span>
+                                </li>
+                              </ul>
+                            </a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                              <div class="menu-list__box flex">
+                                <p class="menu-list__title title-x">
+                                  Irish Guinness
+                                </p>
+                                <div class="menu-list__price title-x">
+                                  $26
+                                </div>
+                              </div>
+                              <ul class="composition-list flex">
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    IE
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    750 ml
+                                  </span>
+                                </li>
+                              </ul>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="menu__item">
+                        <div class="menu__images">
+                          <img class="menu__img images" src="img/menu-bar.jpg" alt="menu-bar">
+                        </div>
+                      </div>
+                      <div class="menu__item flex-direction">
+                        <h3 class="menu-title">
+                          Cocktails
+                        </h3>
+                        <ul class="menu-list flex-direction">
+                          <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                              <div class="menu-list__box flex">
+                                <p class="menu-list__title title-x">
+                                  Aperol Spritz
+                                </p>
+                                <div class="menu-list__price title-x">
+                                  $20
+                                </div>
+                              </div>
+                              <ul class="composition-list flex">
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Aperol
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Villa 
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Marchesi prosecco
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    soda 
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    30ml
+                                  </span>
+                                </li>
+                              </ul>
+                            </a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                              <div class="menu-list__box flex">
+                                <p class="menu-list__title title-x">
+                                  Dark 'N' Stormy
+                                </p>
+                                <div class="menu-list__price title-x">
+                                  $16
+                                </div>
+                              </div>
+                              <ul class="composition-list flex">
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Dark rum
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Ginger beer
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Slice of lime.
+                                  </span>
+                                </li>
+                              </ul>
+                            </a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                              <div class="menu-list__box flex">
+                                <p class="menu-list__title title-x">
+                                  Daiquiri
+                                </p>
+                                <div class="menu-list__price title-x">
+                                  $10
+                                </div>
+                              </div>
+                              <ul class="composition-list flex">
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Rum
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Citrus juice
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Sugar
+                                  </span>
+                                </li>
+                              </ul>
+                            </a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                              <div class="menu-list__box flex">
+                                <p class="menu-list__title title-x">
+                                  Old Fashioned
+                                </p>
+                                <div class="menu-list__price title-x">
+                                  $31
+                                </div>
+                              </div>
+                              <ul class="composition-list flex">
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Bourbon 
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Brown sugar
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Angostura Bitters
+                                  </span>
+                                </li>
+                              </ul>
+                            </a>
+                          </li>
+                          <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">
+                              <div class="menu-list__box flex">
+                                <p class="menu-list__title title-x">
+                                  Negroni
+                                </p>
+                                <div class="menu-list__price title-x">
+                                  $26
+                                </div>
+                              </div>
+                              <ul class="composition-list flex">
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Gin 
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Sweet Vermouth
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Campari
+                                  </span>
+                                </li>
+                                <li class="composition-list__item">
+                                  <span class="composition-list__span">
+                                    Orange garnish
+                                  </span>
+                                </li>
+                              </ul>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a class="button btn" href="#">
+                      View More
+                    </a>
+                  </div>
+                </div>
+                <div class="menu-tabs__content-item" id="tab-2">
+                  content-2
+                </div>
+                <div class="menu-tabs__content-item" id="tab-3">
+                  content-3
+                </div>
+              </div>
+            </div>
+          </section>
+        </aside>
+        <!-- MENU END -->
+
+        <!-- CONTACTS START -->
+        <aside class="bg-bite bg-bite__contacts">
+          <section class="contacts bg-img">
+            <div class="container">
+              <div class="contacts__wrap flex">
+                <div class="contacts__item flex-direction">
+                  <div class="title-box flex-direction">
+                    <p class="subtitle-left">
+                      Contact
+                    </p>
+                    <h2 class="title">
+                      Find Us
+                    </h2>
+                  </div>
+                  <div class="contacts-block flex-direction">
+                    <div class="box-text">
+                      <p class="text">
+                        Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG
+                      </p>
+                    </div>
+                    <div class="contacts-block__hours flex-direction">
+                      <h5 class="title title-x">
+                        Opening Hours
+                      </h5>
+                      <p class="contacts-block__text">
+                        Mon - Fri: 10:00 am - 02:00 am
+                      </p>
+                      <p class="contacts-block__text">
+                        Sat - Sun: 10:00 am - 03:00 am
+                      </p>
+                    </div>
+                  </div> 
+                  <a class="button btn" href="#">
+                    Visit Us
+                  </a>
+                </div>
+                <div class="contacts__item">
+                  <div class="img-box img-box__contacts">
+                    <img class="img-box__images" src="img/contacts.png" alt="contacts">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </aside>
+        <!-- CONTACTS -->
+
+      </main>
+      <!-- MAIN END -->
+
+   
+
+      <!-- FOOTER START -->
+      <aside class="bg-bite"></aside>
+      <footer class="footer bg-img">
+        <div class="container">
+          <div class="footer__wrap flex-direction">
+            <form class="form-newsletter bg-form flex-direction">
+              <div class="title-box flex-direction">
+                <p class="subtitle-center">
+                  Newsletter
+                </p>
+                <h2 class="title">
+                  Subscribe to Our Newsletter
+                </h2>
+                <div class="box-text">
+                  <p class="text">
+                    And never miss latest Updates!
+                  </p>
+                </div>
+              </div>
+              <div class="form-newsletter__box flex">
+                <label class="form-newsletter__label">
+                  <input class="form-newsletter__input form-input" type="email" placeholder="Email Address">
+                </label>
+                <button class="button btn">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <div class="footer-content flex">
+              <div class="footer-content__item flex-direction">
+                <h3 class="footer-content__title title-xl">
+                  Contact Us
+                </h3>
+                <div class="box-address flex-direction">
+                  <p class="text">
+                    9 W 53rd St, New York, NY 10019, USA
+                  </p>
+                  <ul class="footer-list">
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="tel:12123441230">
+                        +1 212-344-1230
+                      </a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a class="footer-list__link" href="tel:12125551230">
+                        +1 212-555-1230
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-content__item flex-direction">
+                <a class="logo" href="#">
+                  <img class="logo__img footer-logo" src="img/svg/gerícht-logo-y.svg" alt="gerícht-logo">
+                </a>
+                <div class="box-text footer-text-box">
+                  <p class="text footer-text">
+                    "The best way to find yourself is to lose yourself in the service of others.”
+                  </p>
+                </div>
+                <ul class="social-list flex">
+                  <li class="social-list__item">
+                    <a class="social-list__link" href="#">
+                      <img class="social-list__img" src="img/svg/facebook.svg" alt="facebook">
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a class="social-list__link" href="#">
+                      <img class="social-list__img" src="img/svg/twitter.svg" alt="twitter">
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a class="social-list__link" href="#">
+                      <img class="social-list__img" src="img/svg/instagram-1.svg" alt="instagram">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-content__item flex-direction">
+                <h3 class="footer-content__title title-xl">
+                  Working Hours
+                </h3>
+                <div class="box-work flex-direction">
+                  <div class="box-work__one">
+                    <p class="text">
+                      Monday-Friday:
+                    </p>
+                    <span class="text">
+                      08:00 am -12:00 am
+                    </span>
+                  </div>
+                  <div class="box-work__two">
+                    <p class="text">
+                      Saturday-Sunday:
+                    </p>
+                    <span class="text">
+                      07:00am -11:00 pm
+                    </span>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p class="footer-copy text">
+              2021 Gerícht. All Rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+
     </div>
-  </footer>
-  <!-- FOOTER END -->
+  
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

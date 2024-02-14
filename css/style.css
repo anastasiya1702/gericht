@@ -197,6 +197,30 @@ body {
   padding: 0 10px 138px 10px;
 }
 
+.wrapper {
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  width: 100%;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--yellow);
+  transform: translate(120%, 0);
+  opacity: 0.8;
+  filter: blur(15px);
+  z-index: 10;
+}
+
 .flex {
   display: flex;
 }
@@ -522,19 +546,14 @@ body {
   bottom: -58px;
 }
 .slick-dots li {
-  padding: 2px;
   font-family: 'Cormorant Upright', serif;
   color: var(--yellow-100);
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 1.75;
   letter-spacing: 0.64px;
   text-transform: capitalize;
   transition: all .5s;
-  width: 18px;
-  position: relative;
-  z-index: 0;
-  text-align: center;
 }
 .slick-dots li.slick-active {
   color: var(--white);
@@ -549,8 +568,13 @@ body {
   width: 16px;
   height: 1px;
   background-color: var(--yellow);
-  top: 18px;
+  top: 19px;
   right: -22px;
+}
+.barhome-slider .slick-dots {
+  bottom: 90px;
+  right: -47%;
+  transform: rotate(90deg);
 }
 
 #login_form,
@@ -625,6 +649,7 @@ body {
 .window-form__input {
   width: 100%;
   background-color: transparent;
+  border: transparent;
   border-bottom: 2px solid var(--yellow-100);
   padding: 8px 23px;
   transition: all 0.3s;
@@ -633,6 +658,10 @@ body {
   font-size: 18px;
   line-height: 1.3;
   letter-spacing: 0.64px;
+  transition: all .5s;
+}
+.window-form__input:hover {
+  opacity: 0.5;
 }
 .window-form__input::placeholder {
   color: var(--grey);
@@ -788,6 +817,13 @@ body {
   transition: all .3s;
 }
 .header-hashtag__link:hover {
+  color: var(--yellow-100);
+}
+.header-hashtag__link--active {
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+}
+.header-hashtag__link--active:hover {
   color: var(--yellow);
 }
 
@@ -900,7 +936,6 @@ body {
 .footer-text-box {
   margin-bottom: 10px;
   position: relative;
-  text-align: justify;
   letter-spacing: normal;
   color: var(--white);
 }
@@ -928,7 +963,7 @@ body {
 }
 
 .footer-bottom {
-  text-align: center;
+  text-align: right;
 }
 /**********
 *** FOOTER END ***
