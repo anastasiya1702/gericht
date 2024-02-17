@@ -1072,10 +1072,11 @@ body {
 *** MENU START ***
 **********/
 .menu-top {
-  background-image: url(../img/bg/menu-bg.jpg);
+  background-image: url(../img/bg/menubg-bar.jpg);
   justify-content: center;
   align-items: flex-start;
-  padding: 200px 0;
+  padding: 200px 100px;
+  overflow: hidden;
 }
 
 .menu-tabs__top {
@@ -1094,17 +1095,37 @@ body {
   transition: all .5s;
 }
 .menu-tabs__top-item:hover {
-  scale: 1.1;
-  color: var(--yellow-100);
-  transform: translate(50px);
+  color: var(--yellow);
 }
 
 .menu-tabs__top-item--active {
   text-decoration: underline;
 }
+.menu-tabs__top-item--active.menu-tabs__food,
+.menu-tabs__top-item--active.menu-tabs__desserts {
+  position: relative;
+  width: 100%;
+}
+.menu-tabs__top-item--active.menu-tabs__food::before {
+  position: absolute;
+  content: url(../img/bg/menubg-food.png);
+  top: -418%;
+  right: 0;
+  bottom: 0;
+  left: -27%;
+  z-index: -1;
+}
+.menu-tabs__top-item--active.menu-tabs__desserts::before {
+  position: absolute;
+  content: url(../img/bg/menubg-desserts.png);
+  top: -594%;
+  right: 0;
+  bottom: 0;
+  left: -27%;
+  z-index: -1;
+}
 .menu-tabs__top-item--active:hover {
-  scale: 1.1;
-  color: var(--white);
+  color: var(--yellow-100);
 }
 
 .menu-bottom {

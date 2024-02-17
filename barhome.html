@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/stylebar.css">
@@ -21,64 +22,63 @@
 
     <div class="inner" data-barba="container" data-barba-namespace="home">
 
+      <div class="window" id="login_form">
+        <form class="window-form animate flex-direction">
+          <button class="close-btn window-form__close" onclick="closeLoginForm()">X</button>
+          <h3 class="title window-form__title">
+            Log in
+          </h3>
+          <label class="window-form__label">
+            Username
+            <input class="window-form__input" type="text" required placeholder="name@125.com">
+          </label>
+          <label class="window-form__label">
+            Password
+            <input class="window-form__input" type="password" required>
+          </label>
+          <button class="window-form__btn button" type="submit">
+            Log in
+          </button>
+          <label class="window-form__rem">
+            <input class="window-form__checkbox" type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </form>
+      </div>
+      
+      <div class="window" id="registration_form">
+        <form class="window-form animate flex-direction">
+          <button class="close-btn window-form__close" onclick="closeRegistrationForm()">X</button>
+          <h3 class="title window-form__title">
+            Registration
+          </h3>
+          <label class="window-form__label">
+            Username
+            <input class="window-form__input" type="text" required placeholder="Anna">
+          </label>
+          <label class="window-form__label">
+            Email address
+            <input class="window-form__input" type="email" required placeholder="anna@452.com">
+          </label>
+          <label class="window-form__label">
+            Phone
+            <input class="window-form__input" type="tel" required placeholder="+380555212514">
+          </label>
+          <label class="window-form__label">
+            Password
+            <input class="window-form__input" type="password" required>
+          </label>
+          <label class="window-form__conf">
+            <input class="window-form__checkbox" type="checkbox" checked="checked" name="confidentiality policy">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus beatae officiis aut nulla vero.
+          </label>
+          <button class="window-form__btn button register-btn" type="submit">
+            Register
+          </button>
+        </form>
+      </div>
+
       <!-- HEADER START -->
       <header class="header header-bg bg-img">
-        
-        <div class="window" id="login_form">
-          <form class="window-form animate flex-direction">
-            <button class="close-btn window-form__close" onclick="closeLoginForm()">X</button>
-            <h3 class="title window-form__title">
-              Log in
-            </h3>
-            <label class="window-form__label">
-              Username
-              <input class="window-form__input" type="text" required placeholder="name@125.com">
-            </label>
-            <label class="window-form__label">
-              Password
-              <input class="window-form__input" type="password" required>
-            </label>
-            <button class="window-form__btn button" type="submit">
-              Log in
-            </button>
-            <label class="window-form__rem">
-              <input class="window-form__checkbox" type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </form>
-        </div>
-
-        <div class="window" id="registration_form">
-          <form class="window-form animate flex-direction">
-            <button class="close-btn window-form__close" onclick="closeRegistrationForm()">X</button>
-            <h3 class="title window-form__title">
-              Registration
-            </h3>
-            <label class="window-form__label">
-              Username
-              <input class="window-form__input" type="text" required placeholder="Anna">
-            </label>
-            <label class="window-form__label">
-              Email address
-              <input class="window-form__input" type="email" required placeholder="anna@452.com">
-            </label>
-            <label class="window-form__label">
-              Phone
-              <input class="window-form__input" type="tel" required placeholder="+380555212514">
-            </label>
-            <label class="window-form__label">
-              Password
-              <input class="window-form__input" type="password" required>
-            </label>
-            <label class="window-form__conf">
-              <input class="window-form__checkbox" type="checkbox" checked="checked" name="confidentiality policy">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus beatae officiis aut nulla vero.
-            </label>
-            <button class="window-form__btn button register-btn" type="submit">
-              Register
-            </button>
-          </form>
-        </div>
-
         <div class="container-big">
           <div class="header__wrap flex">
             <a class="logo" href="#">
@@ -746,8 +746,6 @@
 
       </main>
       <!-- MAIN END -->
-
-   
 
       <!-- FOOTER START -->
       <aside class="bg-bite"></aside>

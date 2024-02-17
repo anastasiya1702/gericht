@@ -1,27 +1,4 @@
-// login-form
 
-function closeLoginForm() {
-  var loginForm = document.getElementById('login_form');
-  loginForm.style.display = 'none';
-}
-
-document.getElementById('login_link').addEventListener('click', function () {
-  var loginForm = document.getElementById('login_form');
-  loginForm.style.display = (loginForm.style.display === 'flex') ? 'none' : 'flex';
-});
-
-
-// registration-form
-
-function closeRegistrationForm() {
-  var RegistrationForm = document.getElementById('registration_form');
-  RegistrationForm.style.display = 'none';
-}
-
-document.getElementById('registration_link').addEventListener('click', function () {
-  var RegistrationForm = document.getElementById('registration_form');
-  RegistrationForm.style.display = (RegistrationForm.style.display === 'flex') ? 'none' : 'flex';
-});
 
 
 // barba
@@ -58,6 +35,32 @@ barba.init({
 function homePage() {
 
   $(function () {
+
+    // login-form
+
+    function closeLoginForm() {
+      var loginForm = document.getElementById('login_form');
+      loginForm.style.display = 'none';
+    }
+
+    document.getElementById('login_link').addEventListener('click', function () {
+      var loginForm = document.getElementById('login_form');
+      loginForm.style.display = (loginForm.style.display === 'flex') ? 'none' : 'flex';
+    });
+
+
+    // registration-form
+
+    function closeRegistrationForm() {
+      var RegistrationForm = document.getElementById('registration_form');
+      RegistrationForm.style.display = 'none';
+    }
+
+    document.getElementById('registration_link').addEventListener('click', function () {
+      var RegistrationForm = document.getElementById('registration_form');
+      RegistrationForm.style.display = (RegistrationForm.style.display === 'flex') ? 'none' : 'flex';
+    });
+
 
     // gallery - slider
 
