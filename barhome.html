@@ -14,13 +14,16 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/stylebar.css">
 </head>
-<body data-barba="wrapper">
+<body > 
+  <!-- data-barba="wrapper" -->
 
   <div class="box"></div>
 
-  <div class="wrapper">
+  <!-- <div class="wrapper"> -->
 
-    <div class="inner" data-barba="container" data-barba-namespace="home">
+    <!-- <div class="inner" data-barba="container" data-barba-namespace="home"> -->
+
+      <div class="menu-close"></div>
 
       <div class="window" id="login_form">
         <form class="window-form animate flex-direction">
@@ -84,8 +87,14 @@
             <a class="logo" href="#">
               <img class="logo__img" src="img/svg/gerícht-logo.svg" alt="gerícht-logo">
             </a>
+            <button class="menu__btn">
+              <span class="menu__span"></span>
+            </button>
             <nav class="nav-menu">
               <ul class="nav-menu__list flex">
+                <li class="nav-menu__close">
+                  <button class="nav-menu__close-btn window-form__close" href="#">X</button>
+                </li>
                 <li class="nav-menu__item">
                   <a class="nav-menu__link nav-menu__link--active nav-link" href="#">
                     Home
@@ -112,6 +121,27 @@
                   </a>
                 </li>
               </ul>
+              <div class="nav-login flex-direction nav-login-mobaile">
+                <ul class="nav-login__list flex nav-login-mobaile__list">
+                  <li class="nav-login__item nav-login-mobaile__item">
+                    <a class="nav-login__link login-link" id="login_link-mobaile" href="#">
+                      Log in
+                    </a>
+                  </li>
+                  <li class="nav-login__item">
+                    <a class="nav-login__link" id="registration_link-mobaile" href="#">
+                      registration
+                    </a>
+                  </li>
+                </ul>
+                <ul class="nav-login__list nav-login-mobaile__list">
+                  <li class="nav-login__item">
+                    <a class="nav-login__link" href="#">
+                      book table
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </nav>
             <div class="nav-login flex">
               <ul class="nav-login__list flex">
@@ -157,7 +187,7 @@
                     </h1>
                   </div>
                   <div class="header-slider__item">
-                    <img class="header-slider-img" src="img/bar-slider.png" alt="slider">
+                    <img class="header-slider-img images" src="img/bar-slider.png" alt="slider">
                   </div>
                 </div>
               </div>
@@ -221,7 +251,7 @@
       <main class="main">
 
         <!-- RESERV START -->
-        <section class="reserv bg-bite">
+        <!-- <section class="reserv bg-bite">
           <div class="container">
             <div class="reserv__wrap">
               <form class="reserv-form flex-direction bg-form">
@@ -271,11 +301,11 @@
               </form>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- RESERV END -->
 
         <!-- ABOUTBARHOME START -->
-        <aside class="bg-bite bg-bite__about-barhome">
+        <!-- <aside class="bg-bite bg-bite__about-barhome">
           <section class="about-barhome bg-img">
             <div class="container">
               <div class="about-barhome__wrap flex">
@@ -309,11 +339,11 @@
               </div>
             </div>
           </section>
-        </aside>
+        </aside> -->
         <!-- ABOUTBARHOME END -->
 
         <!-- SELECTION START -->
-        <section class="selection">
+        <!-- <section class="selection">
           <div class="container">
             <div class="selection__wrap flex-direction">
               <div class="title-box flex-direction">
@@ -344,11 +374,11 @@
               </ul>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- SELECTION END -->
 
         <!-- WORK START -->
-        <section class="work bg-img flex">
+        <!-- <section class="work bg-img flex">
           <div class="container">
             <div class="work__wrap">
               <div class="title-box flex-direction">
@@ -361,11 +391,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- WORK END -->
 
         <!-- MENU START -->
-        <aside class="bg-bite bg-bite__menu-bottom">
+        <!-- <aside class="bg-bite bg-bite__menu-bottom">
           <section class=" menu menu-bottom">
             <div class="container">
               <div class="menu-tabs__content">
@@ -694,11 +724,11 @@
               </div>
             </div>
           </section>
-        </aside>
+        </aside> -->
         <!-- MENU END -->
 
         <!-- CONTACTS START -->
-        <aside class="bg-bite bg-bite__contacts">
+        <!-- <aside class="bg-bite bg-bite__contacts">
           <section class="contacts bg-img">
             <div class="container">
               <div class="contacts__wrap flex">
@@ -741,14 +771,14 @@
               </div>
             </div>
           </section>
-        </aside>
+        </aside> -->
         <!-- CONTACTS -->
 
       </main>
       <!-- MAIN END -->
 
       <!-- FOOTER START -->
-      <aside class="bg-bite"></aside>
+      <!-- <aside class="bg-bite"></aside>
       <footer class="footer bg-img">
         <div class="container">
           <div class="footer__wrap flex-direction">
@@ -856,19 +886,19 @@
             </p>
           </div>
         </div>
-      </footer>
+      </footer> -->
       <!-- FOOTER END -->
 
-    </div>
+    <!-- </div> -->
   
-  </div>
+  <!-- </div> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/jquery.fancybox.pack.js"></script>
-  <script src="https://unpkg.com/@barba/core"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 </html>

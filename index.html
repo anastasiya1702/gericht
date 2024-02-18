@@ -15,68 +15,71 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-barba="wrapper">
+<body>
+  <!-- data-barba="wrapper" -->
 
   <div class="box"></div>
 
-  <div class="wrapper">
+  <!-- <div class="wrapper"> -->
 
-    <div class="inner" data-barba="container" data-barba-namespace="home">
+    <!-- <div class="inner" data-barba="container" data-barba-namespace="home"> -->
 
-      <div class="window" id="login_form">
-        <form class="window-form animate flex-direction">
-          <button class="close-btn window-form__close" onclick="closeLoginForm()">X</button>
-          <h3 class="title window-form__title">
-            Log in
-          </h3>
-          <label class="window-form__label">
-            Username
-            <input class="window-form__input form-input" type="email" required placeholder="name@125.com">
-          </label>
-          <label class="window-form__label">
-            Password
-            <input class="window-form__input form-input" type="password" required>
-          </label>
-          <button class="window-form__btn button" type="submit">
-            Log in
-          </button>
-          <label class="window-form__rem">
-            <input class="window-form__checkbox" type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </form>
-      </div>
-      
-      <div class="window" id="registration_form">
-        <form class="window-form animate flex-direction">
-          <button class="close-btn window-form__close" onclick="closeRegistrationForm()">X</button>
-          <h3 class="title window-form__title">
-            Registration
-          </h3>
-          <label class="window-form__label">
-            Username
-            <input class="window-form__input form-input" type="text" required placeholder="Anna">
-          </label>
-          <label class="window-form__label">
-            Email address
-            <input class="window-form__input form-input" type="email" required placeholder="anna@452.com">
-          </label>
-          <label class="window-form__label">
-            Phone
-            <input class="window-form__input form-input" type="tel" required placeholder="+380555212514">
-          </label>
-          <label class="window-form__label">
-            Password
-            <input class="window-form__input form-input" type="password" required>
-          </label>
-          <label class="window-form__conf">
-            <input class="window-form__checkbox" type="checkbox" checked="checked" name="confidentiality policy">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus beatae officiis aut nulla vero.
-          </label>
-          <button class="window-form__btn button register-btn" type="submit">
-            Register
-          </button>
-        </form>
-      </div>
+      <div class="menu-close"></div>
+
+        <div class="window" id="login_form">
+          <form class="window-form animate flex-direction">
+            <button class="close-btn window-form__close" onclick="closeLoginForm()">X</button>
+            <h3 class="title window-form__title">
+              Log in
+            </h3>
+            <label class="window-form__label">
+              Username
+              <input class="window-form__input form-input" type="email" required placeholder="name@125.com">
+            </label>
+            <label class="window-form__label">
+              Password
+              <input class="window-form__input form-input" type="password" required>
+            </label>
+            <button class="window-form__btn button" type="submit">
+              Log in
+            </button>
+            <label class="window-form__rem">
+              <input class="window-form__checkbox" type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </form>
+        </div>
+        
+        <div class="window" id="registration_form">
+          <form class="window-form animate flex-direction">
+            <button class="close-btn window-form__close" onclick="closeRegistrationForm()">X</button>
+            <h3 class="title window-form__title">
+              Registration
+            </h3>
+            <label class="window-form__label">
+              Username
+              <input class="window-form__input form-input" type="text" required placeholder="Anna">
+            </label>
+            <label class="window-form__label">
+              Email address
+              <input class="window-form__input form-input" type="email" required placeholder="anna@452.com">
+            </label>
+            <label class="window-form__label">
+              Phone
+              <input class="window-form__input form-input" type="tel" required placeholder="+380555212514">
+            </label>
+            <label class="window-form__label">
+              Password
+              <input class="window-form__input form-input" type="password" required>
+            </label>
+            <label class="window-form__conf">
+              <input class="window-form__checkbox" type="checkbox" checked="checked" name="confidentiality policy">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus beatae officiis aut nulla vero.
+            </label>
+            <button class="window-form__btn button register-btn" type="submit">
+              Register
+            </button>
+          </form>
+        </div>
 
       <!-- HEADER START -->
       <header class="header">
@@ -85,8 +88,14 @@
             <a class="logo" href="#">
               <img class="logo__img" src="img/svg/gerícht-logo.svg" alt="gerícht-logo">
             </a>
+            <button class="menu__btn">
+              <span class="menu__span"></span>
+            </button>
             <nav class="nav-menu">
               <ul class="nav-menu__list flex">
+                <li class="nav-menu__close">
+                  <button class="nav-menu__close-btn window-form__close" href="#">X</button>
+                </li>
                 <li class="nav-menu__item">
                   <a class="nav-menu__link nav-menu__link--active nav-link" href="#">
                     Home
@@ -113,6 +122,27 @@
                   </a>
                 </li>
               </ul>
+              <div class="nav-login flex-direction nav-login-mobaile">
+                <ul class="nav-login__list flex nav-login-mobaile__list">
+                  <li class="nav-login__item nav-login-mobaile__item">
+                    <a class="nav-login__link login-link" id="login_link-mobaile" href="#">
+                      Log in
+                    </a>
+                  </li>
+                  <li class="nav-login__item">
+                    <a class="nav-login__link" id="registration_link-mobaile" href="#">
+                      registration
+                    </a>
+                  </li>
+                </ul>
+                <ul class="nav-login__list nav-login-mobaile__list">
+                  <li class="nav-login__item">
+                    <a class="nav-login__link" href="#">
+                      book table
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </nav>
             <div class="nav-login flex">
               <ul class="nav-login__list flex">
@@ -290,7 +320,7 @@
       <main class="main">
 
         <!-- ABOUT START -->
-        <section class="about bg-img">
+        <!-- <section class="about bg-img">
           <div class="container">
             <div class="about__wrap flex">
               <div class="about__item flex-direction">
@@ -326,11 +356,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- ABOUT END -->
 
         <!-- RESERV START -->
-        <section class="reserv bg-bite">
+        <!-- <section class="reserv bg-bite">
           <div class="container">
             <div class="reserv__wrap">
               <form class="reserv-form flex-direction bg-form">
@@ -380,26 +410,24 @@
               </form>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- RESERV END -->
 
         <!-- MENU START -->
-        <aside class="bg-bite bg-bite__menu">
+        <!-- <aside class="bg-bite bg-bite__menu">
           <section class="menu menu-top flex-direction bg-img">
-            <!-- <div class="container-big"> -->
-              <h2 class="sr-only">Menu</h2>
-              <div class="menu-tabs__top flex-direction">
-                <a class="menu-tabs__top-item menu-tabs__top-item--active menu-tabs__bar" href="#tab-1">
-                  Bar Menu
-                </a>
-                <a class="menu-tabs__top-item menu-tabs__food" href="#tab-2">
-                  Food Menu
-                </a>
-                <a class="menu-tabs__top-item menu-tabs__desserts" href="#tab-3">
-                  Desserts Menu
-                </a>
-              </div>
-            <!-- </div> -->
+            <h2 class="sr-only">Menu</h2>
+            <div class="menu-tabs__top flex-direction">
+              <a class="menu-tabs__top-item menu-tabs__top-item--active menu-tabs__bar" href="#tab-1">
+                Bar Menu
+              </a>
+              <a class="menu-tabs__top-item menu-tabs__food" href="#tab-2">
+                Food Menu
+              </a>
+              <a class="menu-tabs__top-item menu-tabs__desserts" href="#tab-3">
+                Desserts Menu
+              </a>
+            </div>
           </section>
         </aside>
         <section class=" menu menu-bottom">
@@ -729,11 +757,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- MENU END -->
 
         <!-- CHIEF START -->
-        <section class="chief bg-img">
+        <!-- <section class="chief bg-img">
           <div class="container">
             <div class="chief__wrap flex">
               <div class="chief__item">
@@ -773,11 +801,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- CHIEF END -->
 
         <!-- TEAM START -->
-        <aside class="bg-bite bg-bite__team">
+        <!-- <aside class="bg-bite bg-bite__team">
           <section class="team bg-img">
             <div class="container">
               <div class="team__wrap flex-direction">
@@ -889,11 +917,11 @@
               </div>
             </div>
           </section>
-        </aside>
+        </aside> -->
         <!-- TEAM END -->
 
         <!-- VIDEO START -->
-        <aside class="bg-bite bg-bite__video">
+        <!-- <aside class="bg-bite bg-bite__video">
           <section class="video bg-img flex-direction">
             <div class="container">
               <div class="video__wrap">
@@ -904,11 +932,11 @@
               </div>
             </div>
           </section>
-        </aside>
+        </aside> -->
         <!-- VIDEO END -->
 
         <!-- AWARD START -->
-        <section class="award bg-img">
+        <!-- <section class="award bg-img">
           <div class="container">
             <div class="award__wrap flex">
               <div class="award__item flex-direction">
@@ -982,11 +1010,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- AWARD END -->
 
         <!-- BLOG START -->
-        <aside class="bg-bite bg-bite__blog">
+        <!-- <aside class="bg-bite bg-bite__blog">
           <section class="blog">
             <div class="container">
               <div class="blog__wrap flex-direction">
@@ -1077,11 +1105,11 @@
               </div>
             </div>
           </section>
-        </aside>
+        </aside> -->
         <!-- BLOG END -->
 
         <!-- GALLERY START -->
-        <aside class="bg-bite bg-bite__gallery">
+        <!-- <aside class="bg-bite bg-bite__gallery">
           <section class="gallery bg-img">
             <div class="container">
               <div class="gallery__wrap flex">
@@ -1145,14 +1173,14 @@
               </div>
             </div>
           </section>
-        </aside>
+        </aside> -->
         <!-- GALLERY END -->
 
       </main>
       <!-- MAIN END -->
 
       <!-- FOOTER START -->
-      <footer class="footer bg-img">
+      <!-- <footer class="footer bg-img">
         <div class="container">
           <div class="footer__wrap flex-direction">
             <form class="form-newsletter bg-form flex-direction">
@@ -1259,19 +1287,19 @@
             </p>
           </div>
         </div>
-      </footer>
+      </footer> -->
       <!-- FOOTER END -->
 
-    </div>
+    <!-- </div> -->
   
-  </div>
+  <!-- </div> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/jquery.fancybox.pack.js"></script>
-  <script src="https://unpkg.com/@barba/core"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 </html>
