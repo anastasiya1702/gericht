@@ -389,6 +389,11 @@ body {
   max-width: 160px;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .btn-max {
+    max-width: 100%;
+  }
+}
 
 .img-box,
 .img-box__chief {
@@ -471,6 +476,12 @@ body {
   background-color: var(--black-200);
   border: 1px solid rgba(220, 202, 135, 0.20);
   box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+}
+@media screen and (max-width: 768px) {
+  .bg-form {
+    box-shadow: none;
+    gap: 48px;
+  }
 }
 
 .reserv-form {
@@ -1501,6 +1512,19 @@ body {
 .reserv-form__label {
   width: 412px;
   width: 100%;
+}
+@media screen and (max-width: 998px) {
+  .reserv-form{
+    padding: 40px 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reserv{
+    padding: 100px 0;
+  }
+  .label-box{
+    flex-direction: column;
+  }
 }
 /**********
 *** RESERV END ***
