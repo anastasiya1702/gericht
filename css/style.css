@@ -2012,6 +2012,20 @@ body {
 .video-link__img {
   border-radius: 50%;
 }
+@media screen and (max-width: 988px) {
+  .video{
+    height: 600px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .video{
+    height: 370px;
+  }
+  .video-link__img{
+    width: 60px;
+    height: 60px;
+  }
+}
 /**********
 *** VIDEO END ***
 **********/
