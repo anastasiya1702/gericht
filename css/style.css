@@ -171,7 +171,6 @@ body {
 
 .main {
   flex-grow: 1;
-  min-height: 100vh;
 }
 
 .container,
@@ -390,11 +389,6 @@ body {
   max-width: 160px;
   width: 100%;
 }
-@media screen and (max-width: 540px) {
-  .btn{
-    max-width: 100%;
-  }
-}
 
 .img-box,
 .img-box__chief {
@@ -581,7 +575,7 @@ body {
   position: absolute;
   content: url(../img/svg/bite.svg);
   top: -3%;
-  right: 9%;
+  right: 5%;
   z-index: 5;
 }
 .bg-bite__menu::before {
@@ -635,6 +629,11 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .bg-bite::before{
+    top: -6%;
   }
 }
 
@@ -832,7 +831,7 @@ body {
 .header {
   background-color: var(--black-200);
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .header-bg {
@@ -1343,7 +1342,7 @@ body {
   .form-newsletter__box {
     flex-direction: column;
   }
-  .btn {
+  .footer-btn {
     max-width: 100%;
   }
 }
@@ -1408,7 +1407,7 @@ body {
 .title-left::before {
   position: absolute;
   content: url(../img/svg/svg-title.svg);
-  bottom: -55px;
+  bottom: -36px;
   right: 6px;
   transform: rotate(180deg);
 }
@@ -1437,6 +1436,49 @@ body {
 .about__images {
   min-width: 84px;
   height: 703px;
+}
+@media screen and (max-width: 988px) {
+  .about__wrap{
+    flex-direction: column;
+  }
+  .about__img{
+    position: relative;
+  }
+  .about__img{
+    position: absolute;
+    content: url(../img/knives.png);
+    top: -6%;
+    right: 47%;
+    transform: rotate(-90deg);
+  }
+  .about__images{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__wrap::before{
+    top: 17%;
+    left: 12%;
+  }
+  .about__img{
+    display: none;
+  }
+  .about__wrap{
+    gap: 64px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .about__wrap::before{
+    left: -7%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .about {
+    padding: 80px 0;
+  }
+  .about__wrap::before{
+    display: none;
+  }
 }
 /**********
 *** ABOUT END ***
