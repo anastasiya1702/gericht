@@ -71,7 +71,7 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     verticalSwiping: true,
-    fade: true,
+    fade: false,
     cssEase: 'linear',
     pauseOnDotsHover: true,
     customPaging: function (slider, i) {
