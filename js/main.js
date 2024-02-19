@@ -66,19 +66,19 @@ $(function () {
 
   $('.header-slider').slick({
     dots: true,
-    customPaging: function (slider, i) {
-      var slideNumber = i + 1;
-      var formattedNumber = slideNumber < 10 ? '0' + slideNumber : slideNumber;
-      return '<span>' + formattedNumber + '</span>';
-    },
     arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
     vertical: true,
     autoplay: true,
     autoplaySpeed: 2000,
     verticalSwiping: true,
-    centerMode: false,
+    fade: true,
+    cssEase: 'linear',
+    pauseOnDotsHover: true,
+    customPaging: function (slider, i) {
+      var slideNumber = i + 1;
+      var formattedNumber = slideNumber < 10 ? '0' + slideNumber : slideNumber;
+      return '<span>' + formattedNumber + '</span>';
+    }
   });
 
 
