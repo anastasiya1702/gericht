@@ -334,15 +334,13 @@ body {
   color: var(--white);
 }
 @media screen and (max-width: 1024px) {
-  .title,
-  .title-xxl{
+  .title{
     font-size: 58px;
     line-height: 1.2;
   }
 }
 @media screen and (max-width: 768px) {
-  .title,
-  .title-xxl{
+  .title{
     font-size: 44px;
     line-height: 1.1;
   }
@@ -352,17 +350,19 @@ body {
   .work-subtitle {
     font-size: 20px;
   }
+  .title-xl,
+  .title-x{
+    font-size: 26px;
+  }
 }
 @media screen and (max-width: 540px) {
-  .title,
-  .title-xxl{
+  .title{
     font-size: 42px;
     line-height: 1;
   }
 }
 @media screen and (max-width: 376px) {
-  .title,
-  .title-xxl {
+  .title {
     font-size: 40px;
   }
 }
@@ -671,9 +671,13 @@ body {
     top: -77px;
     left: 5%;
   }
-  .bg-bite__team::before {
+  .bg-bite__team::before{
     top: -14px;
     right: 71%;
+  }
+  .bg-bite__blog::before{
+    top: -2%;
+    right: 10%;
   }
 }
 
@@ -2205,6 +2209,29 @@ body {
 }
 .blog-list__link:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 1120px) {
+  .blog-list{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog{
+    padding: 90px 0;
+  }
+  .blog__wrap{
+    gap: 48px;
+  }
+  .blog-list__item{
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .blog-list{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 64px;
+  }
 }
 /**********
 *** BLOG END ***
