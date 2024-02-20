@@ -151,6 +151,12 @@
   align-items: center;
   height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .work{
+    padding: 100px 0;
+    height: auto;
+  }
+}
 /**********
 *** WORK END ***
 **********/
