@@ -193,6 +193,16 @@
 .img-box__contacts {
   max-height: 688px;
 }
+@media screen and (max-width: 1368px) {
+  .contacts__item--none{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts{
+    padding: 90px 0;
+  }
+}
 /**********
 *** CONTACTS END ***
 **********/
