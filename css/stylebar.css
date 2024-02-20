@@ -23,6 +23,29 @@
   width: 100%;
   height: 702px;
 }
+@media screen and (max-width: 1360px) {
+  .about-barhome__wrap{
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about-barhome__wrap{
+    align-items: start;
+    justify-content: flex-start;
+    gap: 0;
+  }
+  .about-barhome__box--vertical{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px){
+  .about-barhome{
+    padding: 90px 0;
+  }
+  .about-barhome__wrap{
+    padding: 0;
+  }
+}
 /**********
 *** ABOUTBARHOME END ***
 **********/
